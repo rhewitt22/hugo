@@ -1,0 +1,25 @@
+input[type=submit] {
+  @include button;
+}
+
+input[type=text],
+input[type=search] {
+  @include text-input;
+}
+
+// Input placeholder text
+::-webkit-input-placeholder {
+   color: $color-fws-blue;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: $color-fws-blue;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: $color-fws-blue;  
+}
+
+:-ms-input-placeholder {  
+   color: $color-fws-blue;  
+}

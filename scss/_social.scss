@@ -1,0 +1,25 @@
+.icon {
+  height: 25px;
+  width: 25px;
+  transition: all 0.5s ease;
+
+  &:hover {
+    transform: scale(1.4);
+  }
+}
+
+.shape-twitter {
+  fill: #55ACEE;
+}
+
+.shape-facebook {
+  fill: #43609c;
+}
+
+.shape-youtube {
+  fill: #e52c27;
+}
+
+.shape-rss {
+  fill: #F79537;
+}

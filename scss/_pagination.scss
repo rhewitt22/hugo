@@ -1,0 +1,28 @@
+.pagination {
+  @include no-style-list;
+  text-align: center;
+
+  li {
+    display: inline;
+    margin-right: 0.5 * $leading;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      @include button;
+      padding:0 (0.5 * $leading);
+
+      &.active {
+        @include disabled-button(lighten($color-fws-blue, 15));
+        padding:0 (0.5 * $leading);
+      }
+
+      &.disabled {
+        @include disabled-button;
+        padding:0 (0.5 * $leading);
+      }
+    }
+  }
+}

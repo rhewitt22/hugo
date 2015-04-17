@@ -1,0 +1,49 @@
+---
+title: Federal Register Documents from the Southeast Region
+
+hero: kids
+handlebars: true
+
+js:
+  - /js/federal-register.js
+---
+<p>This page searches <a href="https://www.federalregister.gov/">The Federal Register - The Daily Journal of the United States Government</a> using their <a href="https://www.federalregister.gov/blog/learn/developers">official API</a>.  The results are limited to Notices and Rules published by the Southeast Region of the U.S. Fish &amp; Wildlife Service.  Please check back periodically for updates.</p>
+
+<div class="spinner">
+  <div class="spinner-container container1">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+  </div>
+  <div class="spinner-container container2">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+  </div>
+  <div class="spinner-container container3">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+  </div>
+</div>
+
+<section class="fws-register">
+  <ul class="register-list"></ul>
+  <button id="load-more-fr-docs">Load 20 More</button>
+</section>
+<!-- We're using Handlesbars.js to template the response we get from the Federal Register API -->
+<script id="register-template" type="x-handlebars-template">
+  {{#each results}}
+  <li class="fws-register-item">
+    <h2>{{ type }}</h2>
+    <h3><a href="{{ html_url }}">{{ title }}</a></h3>
+    <p>{{ publication_date }}</p>
+    <p>{{ abstract }}</p>
+    <p><a href="{{ html_url }}">Read Full {{ type }}...</a><br>
+    <a href="{{ pdf_url }}" target="_blank">Download {{ type }} as PDF</a></p>
+  </li>
+  {{/each}}
+</script>

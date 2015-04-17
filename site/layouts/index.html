@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }}
+    {{ partial "hero.html" . }}
+    {{ partial "search-form.html" . }}
+    <section id="main-content">
+      <div class="wrapper">
+        <h1>Welcome to the Southeast!</h1>
+        <hr>
+        <p class="welcome-text">We are passionate people working to conserve and enhance America's wild side.  We are public servants providing expert conservation consutation services to the states of Alabama, Arkansas, Florida, Georgia, Kentucky, Louisiana, Mississippi, North Carolina, South Carolina, Puerto Rico and the U.S. Virgin Islands.</p>
+
+        <ul class="graphic-launch-point">
+          <li class="launch-point-item">
+            <a href="{{ .Site.Params.baseurl }}/map"><img class="launch-explore" src="{{ .Site.Params.baseurl }}img/map-compass.jpg" alt=""></a>
+          </li><!-- 
+        --><li class="launch-point-item">
+            <a href="{{ .Site.Params.baseurl }}/wildlife"><img class="launch-wildlife" src="{{ .Site.Params.baseurl }}/img/bear-cubs.jpg" alt=""></a>
+          </li><!-- 
+        --><li class="launch-point-item">
+            <a href="http://www.fws.gov/refuges/"><img class="launch-refuges" src="{{ .Site.Params.baseurl }}/img/sunset-at-nox.jpg" alt=""></a>
+          </li>
+        </ul>
+
+        <h2>Latest News</h2>
+        {{ partial "news-teasers.html" . }}
+
+        <!-- <h2>Events</h2>
+        {% include events.html %} -->
+
+        <h2>Our Regional Priorities</h2>
+
+        <hr>
+        <ul class="regional-priorities">
+          <li>
+            <h3>Species At-Risk</h3>
+            <img src="{{ .Site.Params.baseurl }}/img/alligator-snapping-turtle.jpg" alt="">
+          </li><!-- 
+        --><li>
+            <h3>After the Spill: Restoring the Gulf</h3>
+            <img src="{{ .Site.Params.baseurl }}/img/gulf-jereme.jpg" alt="">
+          </li><!-- 
+        --><li>
+            <a href="{{ .Site.Params.baseurl }}/initiatives">
+              <h3>All Lands, All Hands, All Wildlife</h3>
+              <img src="{{ .Site.Params.baseurl }}/img/cows-in-pasture.jpg" alt="Cows stading in a group in a pasture">
+            </a>
+          </li><!-- 
+        --><li>
+            <h3>Latest Fire/Flood/Crisis Issue</h3>
+            <img src="{{ .Site.Params.baseurl }}/img/katrina.jpg" alt="">
+          </li>
+        </ul>
+      </div>
+    </section>
+    {{ partial "footer.html" . }}
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<script src="//code.jquery.com/jquery-1.11.2.min.js"></script>
+{{ if .Params.carousel }}<script src="//cdn.jsdelivr.net/jquery.slick/1.4.1/slick.min.js"></script>{{ end }}
+{{ if .Params.handlebars }}<script src="//cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.1/handlebars.js"></script>{{ end }}
+{{ if .Params.d3 }}<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>{{ end }}
+{{ if.Params.js }}
+  {{ range .Params.js }}
+  <script src="{{.}}"></script>
+  {{ end }}
+{{ end }}
+
+<!-- {{ partial "analytics.html" . }} -->

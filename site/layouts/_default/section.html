@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }}
+    {{ partial "hero.html" . }}
+    {{ partial "search-form.html" . }}
+    <section id="main-content">
+      <div class="wrapper">
+        <h1>{{ .Title }}</h1>
+        <ul class="section-summary">
+        {{ range where .Paginator.Pages "Section" "news" }}
+          {{ .Render "summary" }}
+        {{ end }}
+        </ul>
+        <div class="pagination">
+        {{ partial "pagination.html" . }}
+        </div>
+      </div>
+    </section>
+    {{ partial "footer.html" . }}
+  </body>
+</html>

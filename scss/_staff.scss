@@ -1,0 +1,15 @@
+.staff-listing {
+  @include no-style-list;
+
+  li {
+    margin-bottom: $leading;
+  }
+}
+
+.employee-name {
+  margin-bottom: .5 * $leading;
+
+  span {
+    margin-left: .25 * $leading;
+  }
+}

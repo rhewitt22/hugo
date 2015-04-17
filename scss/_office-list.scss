@@ -1,0 +1,23 @@
+.office-list {
+  @include no-style-list;
+
+  li {
+    @include clearfix;  
+    @include card;
+  }
+
+  address {
+    display: inline;
+  }
+}
+
+.office-icons {
+  float: right;
+}
+
+.filter-input {
+  display: block;
+  margin: $leading auto;
+  width: 50%;
+  max-width: 400px;
+}

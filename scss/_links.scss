@@ -1,0 +1,24 @@
+a {
+  color: $link-color;
+
+  &:hover {
+    color: $link-color-hover;
+  }
+
+  &:active {
+    color: $link-color-active;
+  }
+
+  &:visited {
+    color: $link-color-visited;
+  }
+}
+
+// Automatically add PDF disclaimer for PDF links
+a[href$=".pdf"][data-size]:after { 
+  content: " (PDF, " attr(data-size) ")"; 
+}
+
+a[href$=".pdf"]:not([data-size]):after { 
+  content: " (PDF)"; 
+}

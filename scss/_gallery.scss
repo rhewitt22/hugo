@@ -1,0 +1,19 @@
+.gallery {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 2em;
+    background-color: #aaa;
+    border-radius: 7px;
+    padding: 10px;
+  }
+
+  @media (min-width: 800px) {
+    @include flexible-gallery(2);
+  }
+
+  @media (min-width: 1100px) {
+    @include flexible-gallery(3);
+  }
+}

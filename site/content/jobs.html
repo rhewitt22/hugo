@@ -1,0 +1,51 @@
+---
+title: Jobs in the Southeast Region
+hero: students
+
+handlebars: true
+
+js:
+  - /js/jobs.js
+---
+
+<p>This page searches <a href="https://www.usajobs.gov/">USAJOBS - The Federal Government's Official Jobs Site</a> using their <a href="https://data.usajobs.gov/Rest">official API</a>.  The results are limited to USFWS jobs within the Southeast Region including Alabama, Arkansas, Florida, Georgia, Kentucky, Mississippi, North Carolina, Puerto Rico, South Carolina, Tennessee, and the U.S. Virgin Islands.  Please check back periodically for updates, or create a custom search at <a href="http://usajobs.gov">usajobs.gov</a>.</p>
+
+<div class="spinner">
+  <div class="spinner-container container1">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+  </div>
+  <div class="spinner-container container2">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+  </div>
+  <div class="spinner-container container3">
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+    <div class="circle3"></div>
+    <div class="circle4"></div>
+  </div>
+</div>
+
+<section class="fws-jobs">
+  <ul class="job-list"></ul>
+</section>
+<!-- We're using Handlesbars.js to template the response we get from the USA Jobs API -->
+<script id="jobs-template" type="x-handlebars-template">
+  {{#each JobData}}
+  <li class="job-card">
+    <img src="/img/pushpin.png" />
+    <h3><a href="{{ ApplyOnlineURL }}">{{ JobTitle }} ({{ Series }})</a></h3>
+    <p>Job Listing: {{ StartDate }} - {{ EndDate }}</p>
+    <p>Pay Grade: {{ PayPlan }} {{ Grade }} <span class="salary">Salary Range: {{ SalaryMin }} - {{ SalaryMax }}</span></p>
+    <p class="job-summary">{{ JobSummary }}</p>
+    <p>{{ Locations }}</p>
+    <p>{{ WorkType }} {{ WorkSchedule }}</p>
+    <p>Who map apply: {{ WhoMayApplyText }}</p>
+  </li>
+  {{/each}}
+</script>

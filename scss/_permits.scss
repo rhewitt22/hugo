@@ -1,0 +1,22 @@
+.permit-app {
+  margin-top: $leading;
+}
+
+.permit-last-updated {
+  margin-top: 0.5 * $leading;
+}
+
+.permit-results {
+  p {
+    color: $color-fws-green;
+    font-weight: bold;
+
+    &:last-child {
+      margin-top: 0.25 * $leading;
+    }
+  }
+}
+
+#permit-search {
+  width: 200px;
+}

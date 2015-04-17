@@ -1,0 +1,25 @@
+  <!-- Social: Facebook / Open Graph -->
+  <meta property="fb:admins" content="134503173254693">
+  <meta property="fb:app_id" content="134503173254693">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="{{ .Title }}">
+  <meta property="og:image" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.baseurl }}/static/img/logo.png {{ end }}"/>
+  <meta property="og:description" content="{{ .Params.Summary}}">
+  <meta property="og:site_name" content="{{ .Site.Params.title }}">
+  <meta property="article:author" content="https://www.facebook.com/{{ .Site.Params.facebook }}">
+  <meta property="article:publisher" content="https://www.facebook.com/{{ .Site.Params.facebook }}">
+
+  <!-- Social: Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@{{ .Site.Params.twitter }}">
+  <meta name="twitter:creator" content="{{ .Site.Params.twitter }}">
+  <meta name="twitter:title" content="{{ .Title }}">
+  <meta name="twitter:description" content="{{ .Params.Summary }}">
+  <meta name="twitter:image:src" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.baseurl }}/static/img/logo.png {{ end }}">
+
+  <!-- Social: Google+ / Schema.org  -->
+  <link rel="publisher" href="{{ .Site.Params.baseurl }}">
+  <meta itemprop="name" content="{{ .Title }}">
+  <meta itemprop="description" content="{{ .Params.Summary }}">
+  <meta itemprop="image" content="{{ if .Params.image }}{{ .Params.image }}{{ else }}{{ .Site.Params.baseurl }}/static/img/logo.png {{ end }}">

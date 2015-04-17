@@ -1,0 +1,73 @@
+[
+  {
+    "position": "Regional Director",
+    "name": "Cynthia Dohner",
+    "role": "A description of the Regional Director's role.",
+    "bio": "I biographical blurb for the Regional Director."
+  },
+  {
+    "position": "Deputy Regional Director",
+    "name": "Mike Oetker",
+    "role": "A description of the deputy Regional Director's role.",
+    "bio": "I biographical blurb for the deputy Regional Director. "
+  },
+  {
+    "position": "Assistant Regional Director",
+    "program": "Budget and Administration",
+    "name": "Jackie Parrish",
+    "role": "A description of the role of Budget and Administration."
+  },
+  {
+    "position": "Assistant Regional Director",
+    "program": "Ecological Services",
+    "name": "Leopoldo Miranda",
+    "deputy": "Jack Arnold",
+    "role": "The a description of the role of Ecological Services."
+  },
+  {
+    "position": "Assistant Regional Director",
+    "program": "Ecological Services",
+    "name": "Jeffrey Flemming",
+    "role": "The description of External Affair's role."
+  },
+  {
+    "position": "Assistant Regional Director",
+    "program": "Fisheries",
+    "name": "Allan Brown",
+    "role": "A description of the role of Fisheries."
+  },
+  {
+    "position": "Assistant Regional Director",
+    "program": "Law Enforcement",
+    "name": "Luis Santiago",
+    "deputy": "Darwin Huggins",
+    "role": "A description of the role of Law Enforcement."
+  },
+  {
+    "position": "Cheif",
+    "program": "National Wildlife Refuges System",
+    "name": "David Viker",
+    "deputy": "Brett Hunter",
+    "role": "A description of the role of Refuges."
+  },
+  {
+    "position": "Cheif",
+    "program": "Migratory Birds",
+    "name": "Laurel Barnhill",
+    "deputy": "Dean Demarest",
+    "role": "A description of the role of Migratory Birds."
+  },
+  {
+    "position": "Assistant Regional Director",
+    "program": "Science Applications",
+    "name": "Bill Uihlein",
+    "deputy": "Robert Ford",
+    "role": "A description of the role of Science Applications."
+  },
+  {
+    "position": "Cheif",
+    "program": "Wildlife and Sport Fish Restoration",
+    "name": "Mike Piccirilli",
+    "role": "A description of the role of Wildlife and Sport Fish Restoration."
+  }
+]

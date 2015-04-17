@@ -1,0 +1,19 @@
+{{ if .Params.hero }}
+<!-- Page defined hero image -->
+<img class="hero-image" sizes="100vw"
+    srcset="{{ .Site.Params.baseurl }}/img/hero/{{ .Params.hero }}/200.jpg 200w,
+            {{ .Site.Params.baseurl }}/img/hero/{{ .Params.hero }}/400.jpg 400w,
+            {{ .Site.Params.baseurl }}/img/hero/{{ .Params.hero }}/600.jpg 600w,
+            {{ .Site.Params.baseurl }}/img/hero/{{ .Params.hero }}/1000.jpg 1000w,
+            {{ .Site.Params.baseurl }}/img/hero/{{ .Params.hero }}/1400.jpg 1400w"
+    src="{{ .Site.Params.baseurl }}/img/hero/{{ .Params.hero }}/200.jpg">
+{{ else }}
+<!-- Default hero image -->
+<img class="hero-image" sizes="100vw"
+    srcset="{{ .Site.Params.baseurl }}/img/hero/monarch/200.jpg 200w,
+            {{ .Site.Params.baseurl }}/img/hero/monarch/400.jpg 400w,
+            {{ .Site.Params.baseurl }}/img/hero/monarch/600.jpg 600w,
+            {{ .Site.Params.baseurl }}/img/hero/monarch/1000.jpg 1000w,
+            {{ .Site.Params.baseurl }}/img/hero/monarch/1400.jpg 1400w"
+    src="{{ .Site.Params.baseurl }}/img/hero/monarch/200.jpg" alt="Monarch Butterfly">
+{{ end }}

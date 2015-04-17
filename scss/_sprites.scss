@@ -1,0 +1,323 @@
+/*
+SCSS variables are information about icon's compiled state, stored under its original file name
+
+.icon-home {
+  width: $icon-home-width;
+}
+
+The large array-like variables contain all information about a single icon
+$icon-home: x y offset_x offset_y width height total_width total_height image_path;
+
+At the bottom of this section, we provide information about the spritesheet itself
+$spritesheet: width height image $spritesheet-sprites;
+*/
+$alabama-name: 'alabama';
+$alabama-x: 100px;
+$alabama-y: 0px;
+$alabama-offset-x: -100px;
+$alabama-offset-y: 0px;
+$alabama-width: 100px;
+$alabama-height: 100px;
+$alabama-total-width: 500px;
+$alabama-total-height: 500px;
+$alabama-image: '../img/wildlife.jpg';
+$alabama: (100px, 0px, -100px, 0px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'alabama', );
+$arkansas-name: 'arkansas';
+$arkansas-x: 300px;
+$arkansas-y: 200px;
+$arkansas-offset-x: -300px;
+$arkansas-offset-y: -200px;
+$arkansas-width: 100px;
+$arkansas-height: 100px;
+$arkansas-total-width: 500px;
+$arkansas-total-height: 500px;
+$arkansas-image: '../img/wildlife.jpg';
+$arkansas: (300px, 200px, -300px, -200px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'arkansas', );
+$bartrams-hairstreak-name: 'bartrams-hairstreak';
+$bartrams-hairstreak-x: 0px;
+$bartrams-hairstreak-y: 100px;
+$bartrams-hairstreak-offset-x: 0px;
+$bartrams-hairstreak-offset-y: -100px;
+$bartrams-hairstreak-width: 100px;
+$bartrams-hairstreak-height: 100px;
+$bartrams-hairstreak-total-width: 500px;
+$bartrams-hairstreak-total-height: 500px;
+$bartrams-hairstreak-image: '../img/wildlife.jpg';
+$bartrams-hairstreak: (0px, 100px, 0px, -100px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'bartrams-hairstreak', );
+$black-pinesnake-name: 'black-pinesnake';
+$black-pinesnake-x: 100px;
+$black-pinesnake-y: 100px;
+$black-pinesnake-offset-x: -100px;
+$black-pinesnake-offset-y: -100px;
+$black-pinesnake-width: 100px;
+$black-pinesnake-height: 100px;
+$black-pinesnake-total-width: 500px;
+$black-pinesnake-total-height: 500px;
+$black-pinesnake-image: '../img/wildlife.jpg';
+$black-pinesnake: (100px, 100px, -100px, -100px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'black-pinesnake', );
+$cave-salamander-name: 'cave-salamander';
+$cave-salamander-x: 200px;
+$cave-salamander-y: 0px;
+$cave-salamander-offset-x: -200px;
+$cave-salamander-offset-y: 0px;
+$cave-salamander-width: 100px;
+$cave-salamander-height: 100px;
+$cave-salamander-total-width: 500px;
+$cave-salamander-total-height: 500px;
+$cave-salamander-image: '../img/wildlife.jpg';
+$cave-salamander: (200px, 0px, -200px, 0px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'cave-salamander', );
+$dragonfly-name: 'dragonfly';
+$dragonfly-x: 200px;
+$dragonfly-y: 100px;
+$dragonfly-offset-x: -200px;
+$dragonfly-offset-y: -100px;
+$dragonfly-width: 100px;
+$dragonfly-height: 100px;
+$dragonfly-total-width: 500px;
+$dragonfly-total-height: 500px;
+$dragonfly-image: '../img/wildlife.jpg';
+$dragonfly: (200px, 100px, -200px, -100px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'dragonfly', );
+$florida-name: 'florida';
+$florida-x: 0px;
+$florida-y: 200px;
+$florida-offset-x: 0px;
+$florida-offset-y: -200px;
+$florida-width: 100px;
+$florida-height: 100px;
+$florida-total-width: 500px;
+$florida-total-height: 500px;
+$florida-image: '../img/wildlife.jpg';
+$florida: (0px, 200px, 0px, -200px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'florida', );
+$georgia-aster-name: 'georgia-aster';
+$georgia-aster-x: 100px;
+$georgia-aster-y: 200px;
+$georgia-aster-offset-x: -100px;
+$georgia-aster-offset-y: -200px;
+$georgia-aster-width: 100px;
+$georgia-aster-height: 100px;
+$georgia-aster-total-width: 500px;
+$georgia-aster-total-height: 500px;
+$georgia-aster-image: '../img/wildlife.jpg';
+$georgia-aster: (100px, 200px, -100px, -200px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'georgia-aster', );
+$georgia-name: 'georgia';
+$georgia-x: 200px;
+$georgia-y: 200px;
+$georgia-offset-x: -200px;
+$georgia-offset-y: -200px;
+$georgia-width: 100px;
+$georgia-height: 100px;
+$georgia-total-width: 500px;
+$georgia-total-height: 500px;
+$georgia-image: '../img/wildlife.jpg';
+$georgia: (200px, 200px, -200px, -200px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'georgia', );
+$kentucky-name: 'kentucky';
+$kentucky-x: 300px;
+$kentucky-y: 0px;
+$kentucky-offset-x: -300px;
+$kentucky-offset-y: 0px;
+$kentucky-width: 100px;
+$kentucky-height: 100px;
+$kentucky-total-width: 500px;
+$kentucky-total-height: 500px;
+$kentucky-image: '../img/wildlife.jpg';
+$kentucky: (300px, 0px, -300px, 0px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'kentucky', );
+$kirtlands-warbler-name: 'kirtlands-warbler';
+$kirtlands-warbler-x: 300px;
+$kirtlands-warbler-y: 100px;
+$kirtlands-warbler-offset-x: -300px;
+$kirtlands-warbler-offset-y: -100px;
+$kirtlands-warbler-width: 100px;
+$kirtlands-warbler-height: 100px;
+$kirtlands-warbler-total-width: 500px;
+$kirtlands-warbler-total-height: 500px;
+$kirtlands-warbler-image: '../img/wildlife.jpg';
+$kirtlands-warbler: (300px, 100px, -300px, -100px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'kirtlands-warbler', );
+$laurel-dace-name: 'laurel-dace';
+$laurel-dace-x: 0px;
+$laurel-dace-y: 0px;
+$laurel-dace-offset-x: 0px;
+$laurel-dace-offset-y: 0px;
+$laurel-dace-width: 100px;
+$laurel-dace-height: 100px;
+$laurel-dace-total-width: 500px;
+$laurel-dace-total-height: 500px;
+$laurel-dace-image: '../img/wildlife.jpg';
+$laurel-dace: (0px, 0px, 0px, 0px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'laurel-dace', );
+$louisiana-name: 'louisiana';
+$louisiana-x: 0px;
+$louisiana-y: 300px;
+$louisiana-offset-x: 0px;
+$louisiana-offset-y: -300px;
+$louisiana-width: 100px;
+$louisiana-height: 100px;
+$louisiana-total-width: 500px;
+$louisiana-total-height: 500px;
+$louisiana-image: '../img/wildlife.jpg';
+$louisiana: (0px, 300px, 0px, -300px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'louisiana', );
+$manatee-name: 'manatee';
+$manatee-x: 100px;
+$manatee-y: 300px;
+$manatee-offset-x: -100px;
+$manatee-offset-y: -300px;
+$manatee-width: 100px;
+$manatee-height: 100px;
+$manatee-total-width: 500px;
+$manatee-total-height: 500px;
+$manatee-image: '../img/wildlife.jpg';
+$manatee: (100px, 300px, -100px, -300px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'manatee', );
+$mississippi-name: 'mississippi';
+$mississippi-x: 200px;
+$mississippi-y: 300px;
+$mississippi-offset-x: -200px;
+$mississippi-offset-y: -300px;
+$mississippi-width: 100px;
+$mississippi-height: 100px;
+$mississippi-total-width: 500px;
+$mississippi-total-height: 500px;
+$mississippi-image: '../img/wildlife.jpg';
+$mississippi: (200px, 300px, -200px, -300px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'mississippi', );
+$north-carolina-name: 'north-carolina';
+$north-carolina-x: 300px;
+$north-carolina-y: 300px;
+$north-carolina-offset-x: -300px;
+$north-carolina-offset-y: -300px;
+$north-carolina-width: 100px;
+$north-carolina-height: 100px;
+$north-carolina-total-width: 500px;
+$north-carolina-total-height: 500px;
+$north-carolina-image: '../img/wildlife.jpg';
+$north-carolina: (300px, 300px, -300px, -300px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'north-carolina', );
+$powell-river-mussels-name: 'powell-river-mussels';
+$powell-river-mussels-x: 400px;
+$powell-river-mussels-y: 0px;
+$powell-river-mussels-offset-x: -400px;
+$powell-river-mussels-offset-y: 0px;
+$powell-river-mussels-width: 100px;
+$powell-river-mussels-height: 100px;
+$powell-river-mussels-total-width: 500px;
+$powell-river-mussels-total-height: 500px;
+$powell-river-mussels-image: '../img/wildlife.jpg';
+$powell-river-mussels: (400px, 0px, -400px, 0px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'powell-river-mussels', );
+$puerto-rico-name: 'puerto-rico';
+$puerto-rico-x: 400px;
+$puerto-rico-y: 100px;
+$puerto-rico-offset-x: -400px;
+$puerto-rico-offset-y: -100px;
+$puerto-rico-width: 100px;
+$puerto-rico-height: 100px;
+$puerto-rico-total-width: 500px;
+$puerto-rico-total-height: 500px;
+$puerto-rico-image: '../img/wildlife.jpg';
+$puerto-rico: (400px, 100px, -400px, -100px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'puerto-rico', );
+$reticulated-python-name: 'reticulated-python';
+$reticulated-python-x: 400px;
+$reticulated-python-y: 200px;
+$reticulated-python-offset-x: -400px;
+$reticulated-python-offset-y: -200px;
+$reticulated-python-width: 100px;
+$reticulated-python-height: 100px;
+$reticulated-python-total-width: 500px;
+$reticulated-python-total-height: 500px;
+$reticulated-python-image: '../img/wildlife.jpg';
+$reticulated-python: (400px, 200px, -400px, -200px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'reticulated-python', );
+$sicklefin-redhorse-name: 'sicklefin-redhorse';
+$sicklefin-redhorse-x: 400px;
+$sicklefin-redhorse-y: 300px;
+$sicklefin-redhorse-offset-x: -400px;
+$sicklefin-redhorse-offset-y: -300px;
+$sicklefin-redhorse-width: 100px;
+$sicklefin-redhorse-height: 100px;
+$sicklefin-redhorse-total-width: 500px;
+$sicklefin-redhorse-total-height: 500px;
+$sicklefin-redhorse-image: '../img/wildlife.jpg';
+$sicklefin-redhorse: (400px, 300px, -400px, -300px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'sicklefin-redhorse', );
+$south-carolina-name: 'south-carolina';
+$south-carolina-x: 0px;
+$south-carolina-y: 400px;
+$south-carolina-offset-x: 0px;
+$south-carolina-offset-y: -400px;
+$south-carolina-width: 100px;
+$south-carolina-height: 100px;
+$south-carolina-total-width: 500px;
+$south-carolina-total-height: 500px;
+$south-carolina-image: '../img/wildlife.jpg';
+$south-carolina: (0px, 400px, 0px, -400px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'south-carolina', );
+$tennessee-name: 'tennessee';
+$tennessee-x: 100px;
+$tennessee-y: 400px;
+$tennessee-offset-x: -100px;
+$tennessee-offset-y: -400px;
+$tennessee-width: 100px;
+$tennessee-height: 100px;
+$tennessee-total-width: 500px;
+$tennessee-total-height: 500px;
+$tennessee-image: '../img/wildlife.jpg';
+$tennessee: (100px, 400px, -100px, -400px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'tennessee', );
+$virgin-islands-name: 'virgin-islands';
+$virgin-islands-x: 200px;
+$virgin-islands-y: 400px;
+$virgin-islands-offset-x: -200px;
+$virgin-islands-offset-y: -400px;
+$virgin-islands-width: 100px;
+$virgin-islands-height: 100px;
+$virgin-islands-total-width: 500px;
+$virgin-islands-total-height: 500px;
+$virgin-islands-image: '../img/wildlife.jpg';
+$virgin-islands: (200px, 400px, -200px, -400px, 100px, 100px, 500px, 500px, '../img/wildlife.jpg', 'virgin-islands', );
+$spritesheet-width: 500px;
+$spritesheet-height: 500px;
+$spritesheet-image: '../img/wildlife.jpg';
+$spritesheet-sprites: ($alabama, $arkansas, $bartrams-hairstreak, $black-pinesnake, $cave-salamander, $dragonfly, $florida, $georgia-aster, $georgia, $kentucky, $kirtlands-warbler, $laurel-dace, $louisiana, $manatee, $mississippi, $north-carolina, $powell-river-mussels, $puerto-rico, $reticulated-python, $sicklefin-redhorse, $south-carolina, $tennessee, $virgin-islands, );
+$spritesheet: (500px, 500px, '../img/wildlife.jpg', $spritesheet-sprites, );
+
+/*
+The provided mixins are intended to be used with the array-like variables
+
+.icon-home {
+  @include sprite-width($icon-home);
+}
+
+.icon-email {
+  @include sprite($icon-email);
+}
+*/
+@mixin sprite-width($sprite) {
+  width: nth($sprite, 5);
+}
+
+@mixin sprite-height($sprite) {
+  height: nth($sprite, 6);
+}
+
+@mixin sprite-position($sprite) {
+  $sprite-offset-x: nth($sprite, 3);
+  $sprite-offset-y: nth($sprite, 4);
+  background-position: $sprite-offset-x  $sprite-offset-y;
+}
+
+@mixin sprite-image($sprite) {
+  $sprite-image: nth($sprite, 9);
+  background-image: url(#{$sprite-image});
+}
+
+@mixin sprite($sprite) {
+  @include sprite-image($sprite);
+  @include sprite-position($sprite);
+  @include sprite-width($sprite);
+  @include sprite-height($sprite);
+}
+
+/*
+The `sprites` mixin generates identical output to the CSS template
+  but can be overridden inside of SCSS
+
+@include sprites($spritesheet-sprites);
+*/
+@mixin sprites($sprites) {
+  @each $sprite in $sprites {
+    $sprite-name: nth($sprite, 10);
+    .#{$sprite-name} {
+      @include sprite($sprite);
+    }
+  }
+}

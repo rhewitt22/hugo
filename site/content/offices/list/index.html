@@ -1,0 +1,31 @@
+---
+title: Southeast Region Offices
+
+handlebars: true
+js: 
+  - /js/office-list.js
+---
+
+<input type="search" placeholder="Filter offices..." class="filter-input">
+
+<p>Would you prefer to explore these offices with an <a href="/offices/map">interactive map?</a></p>
+
+<ul class="office-list"></ul>
+<!-- We're using Handlesbars.js to template the response we get from offices.json -->
+<script id="offices-template" type="x-handlebars-template">
+  {{#each .}}
+  <li>
+    <h2>{{ properties.name }}</h2>
+    <p><a href="{{ properties.url }}">Visit us on the web</a></p>
+    <address>
+      {{ properties.address }}<br>
+      {{ properties.city }}, {{ properties.state }} {{ properties.zip }}
+    </address>
+    <div class="office-icons">
+    {{#if properties.facebook }}
+      <a href="{{ properties.facebook }}"><img src="/img/icons/facebook.png"></a>
+    {{/if}}
+    </div>
+  </li>
+  {{/each}}
+</script>

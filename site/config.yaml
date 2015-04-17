@@ -1,0 +1,18 @@
+baseurl: http://fws.gov/southeast
+languageCode: en-us
+title: "US Fish & Wildlife Service: Southeast Region"
+
+canonifyurls: true
+
+# Custom Defined Site Wide Variables
+params:
+  analytics: UA-21323598-1
+  twitter: usfwssoutheast
+  github:  usfws
+  facebook: usfwssoutheast
+  flickr: usfwssoutheast
+  instagram: usfws
+
+permalinks:
+  news: /:section/:year/:month/:filename/
+...

@@ -1,0 +1,12 @@
+<hr class="news-hr">
+<ul class="news-teasers">
+  {{ range first 3 (where .Site.Pages "Section" "news") }}
+  <li>
+    <img src="{{ .Site.Params.baseurl }}{{ .Params.thumbnail }}" alt="">
+    <span>{{ .Date.Format "January _2, 2006"}}: </span> <a href="{{ .Permalink }}">{{ .Title }}</a>
+    <p>{{ .Params.Summary }}</p>
+    {{ if .Params.credit }}<p class="news-photo-credit">Photo: {{ .Params.credit }}</p>{{ end }}
+  </li>
+  {{ end }}
+  <p><a href="{{ .Site.Params.baseurl }}/news">Go to the newsroom...</a></p>
+</ul>

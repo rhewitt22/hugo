@@ -1,0 +1,19 @@
+/*----------------*\
+    Color Palette
+\*----------------*/
+$color-fws-blue: #006EBE;
+$color-fws-green: #008C77;
+$color-fws-dark-blue: #006377;
+
+/*--------------*\
+    Text Color
+\*--------------*/
+$color-body-text: #736357;
+
+/*---------*\
+    LINKS
+\*---------*/
+$link-color: #0088cc;
+$link-color-hover: lighten($link-color, 10);
+$link-color-visited: darken($link-color, 10);
+$link-color-active: darken($link-color, 10);

@@ -1,0 +1,19 @@
+.wildlife-carousel {
+  margin: 0 $leading;
+
+  .carousel {
+    margin: $leading auto;
+    text-align: center;
+    height: 150px;
+
+    h3 {
+      margin-top: 3px;
+    }
+  }
+
+  .carousel img {
+    @include photo-border;
+    border-radius: 50%;
+    margin: auto;
+  }
+}

@@ -1,0 +1,116 @@
+---
+title: Stacked bar graph
+hero: theel
+
+d3: true
+---
+<svg class="stacked"></svg>
+<script src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.5/d3.min.js"></script>
+<script>
+(function() {
+  var margin = {top: 20, right: 100, bottom: 30, left: 40},
+    width = 960 - margin.left - margin.right,
+    height = 500 - margin.top - margin.bottom,
+    workloads = [
+      {
+        region: 1,
+        ninetyDay: 4,
+        twelveMonth: 10,
+        plpch: 1,
+        rpch: 0,
+        total: 15
+      },
+      {
+        region: 2,
+        ninetyDay: 4,
+        twelveMonth: 73,
+        plpch: 5,
+        rpch: 0,
+        total: 82
+      },
+      {
+        region: 3,
+        ninetyDay: 1,
+        twelveMonth: 9,
+        plpch: 1,
+        rpch: 0,
+        total: 11
+      },
+      {
+        region: 4,
+        ninetyDay: 10,
+        twelveMonth: 318,
+        plpch: 5,
+        rpch: 1,
+        total: 334
+      },
+      {
+        region: 5,
+        ninetyDay: 0,
+        twelveMonth: 49,
+        plpch: 0,
+        rpch: 0,
+        total: 49
+      },
+      {
+        region: 6,
+        ninetyDay: 7,
+        twelveMonth: 19,
+        plpch: 9,
+        rpch: 0,
+        total: 35
+      },
+      {
+        region: 7,
+        ninetyDay: 1,
+        twelveMonth: 1,
+        plpch: 0,
+        rpch: 0,
+        total: 2
+      },
+      {
+        region: 8,
+        ninetyDay: 4,
+        twelveMonth: 44,
+        plpch: 8,
+        rpch: 0,
+        total: 56
+      },
+      {
+        region: 9,
+        ninetyDay: 55,
+        twelveMonth: 0,
+        plpch: 0,
+        rpch: 0,
+        total: 55
+      },
+    ];
+
+    var stacked = d3.select('.stacked')
+      .attr('width', width);
+
+    var y = d3.scale.linear()
+      .rangeRound([height, 0])
+
+    var x = d3.scale.ordinal()
+      .rangeRoundBands([0, width], .1);
+
+    var color = d3.scale.ordinal()
+      .range(["#98abc5", "#8a89a6", "#7b6888"]);
+
+    var xAxis = d3.svg.axis()
+      .scale(x)
+      .orient("bottom");
+
+    var yAxis = d3.svg.axis()
+      .scale(y)
+      .orient("left")
+      .tickFormat(d3.format(".0%"));
+
+    var svg = d3.select('svg')
+        .attr('width', width + margin.left + margin.right)
+        .attr('height', height + margin.top + margin.bottom)
+      .append('g')
+        .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
+})();
+</script>

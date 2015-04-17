@@ -1,0 +1,10 @@
+@mixin card($spacing: $leading) {
+  max-width: 750px;
+
+  @media (min-width: 700px) {
+    box-shadow: darken(#eee, 10) 2px 2px 2px;
+    border: 1px solid #eee;
+    margin: 0 auto $leading auto;    
+    padding: $leading;
+  }
+}

@@ -1,0 +1,112 @@
+$header-background-color: $color-fws-green;
+$header-navigation-breakpoint: 880px;
+
+.skip-to-content {
+  @include visuallyhidden;
+}
+
+.top-header {
+  background-color: $header-background-color;
+  height: 60px;
+}
+
+.top-navigation {
+  float: right;
+  display: inline-block;
+  margin: 10px 10px 0 0;
+
+  .button {
+    @media(min-width: $header-navigation-breakpoint) {
+      display: none;
+    }
+  }
+}
+
+.nav-links {
+  display: none;
+
+  @media (min-width: $header-navigation-breakpoint) {
+    @include no-style-list;
+    display: inline;
+    margin:0;
+
+    li {
+      display: inline-block;
+      background-color: darken($header-background-color, 5);
+      border-radius: 5px;
+      transition: background-color 0.75s ease;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      &:hover {
+        background-color: lighten($header-background-color, 5);
+      }
+
+      a {
+        display: inline-block;
+        padding: .5em .5em;
+        color: #fff;
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+
+.region-heading {
+  display: inline;
+  position: absolute;
+  top: 15px;
+  left: 100px; 
+  color: #fff;
+  margin: 0;
+  
+  a {
+    color: #fff;
+    text-decoration: none;
+
+    &:visited {
+      color: #fff;
+    }
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.region-short {
+  display: inline;
+
+  @media (min-width: 375px) {
+    display: none;
+  }
+}
+
+.region-medium {
+  display: none;
+
+  @media (min-width: 375px) and (max-width: 1200px) {
+    display: inline;
+  }
+}
+
+.region-full {
+  display: none;
+
+  @media (min-width: 1200px) {
+    display: inline;
+  }
+}
+
+.hero-image {
+  // remove weird white space between hero image and search form
+  margin-bottom: -4px;
+}

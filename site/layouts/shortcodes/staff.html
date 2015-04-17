@@ -1,0 +1,9 @@
+{{ range .Page.Site.Data.staff.leadership }}
+  <div>
+    <img src="http://placehold.it/100x100" alt="" style="float: right;">
+    <h3>{{ .name }}</h3>
+    <h3>{{ .position }}{{ if .program }}, {{ .program }}{{end}}</h3>
+    <p><strong>Role:</strong> {{ .role }}</p>
+    {{ if .bio }}<p><strong>Bio:</strong> {{ .bio }}</p>{{ end }}
+  </div>
+{{ end }}
