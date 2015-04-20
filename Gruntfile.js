@@ -21,7 +21,7 @@ module.exports = function(grunt) {
           'site/static/js/permits.js': ['js/vendor/angular.min.js', 'js/permits.js'],
           'site/static/js/about.js': ['js/vendor/jquery.easyModal.js', 'js/about.js'],
           'site/static/js/office-list.js': ['js/office-list.js'],
-          'site/static/js/offices.js': ['js/offices.js'],
+          'site/static/js/changing-world.js': ['js/changing-world.js'],
           'site/static/js/map.js': [
             'js/vendor/leaflet.js', 
             'js/vendor/leaflet.markercluster.min.js', 
@@ -40,6 +40,14 @@ module.exports = function(grunt) {
                   '<%= grunt.template.today("yyyy-mm-dd") %> */'
         },
         files: '<%= uglify.dev.files %>'
+      }
+    },
+
+    jsonmin: {
+      all: {
+        files: {
+          "site/static/js/offices.js": ["js/offices.js"]
+        }
       }
     },
 
@@ -119,8 +127,12 @@ module.exports = function(grunt) {
         tasks: ['shell:hugo:dev']
       },
       js: {
-        files: ['<%= jshint.files %>'],
+        files: ['<%= jshint.files %>', '!js/offices.js'],
         tasks: ['newer:jshint', 'newer:uglify:dev', 'shell:hugo:dev']
+      },
+      json: {
+        files: ['site/static/js/offices.js'],
+        tasks: ['jsonmin:all']
       },
       sass: {
         files: ['scss/**/*.scss'],
@@ -131,7 +143,7 @@ module.exports = function(grunt) {
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', ['clean:dev', 'connect:dev', 'jshint', 'uglify:dev', 'sass:dev', 'autoprefixer:all', 'shell:hugo:dev', 'watch']);
-  grunt.registerTask('build', ['clean:dist', 'jshint','uglify:dist', 'sass:dist', 'autoprefixer:all', 'shell:hugo']);
+  grunt.registerTask('default', ['clean:dev', 'connect:dev', 'jshint', 'jsonmin:all', 'uglify:dev', 'sass:dev', 'autoprefixer:all', 'shell:hugo:dev', 'watch']);
+  grunt.registerTask('build', ['clean:dist', 'jshint', 'jsonmin:all', 'uglify:dist', 'sass:dist', 'autoprefixer:all', 'shell:hugo']);
 
 };

@@ -16,6 +16,7 @@
     "grunt-contrib-uglify": "^0.8.0",
     "jshint-stylish": "^1.0.1",
     "grunt-newer": "^1.1.0",
-    "grunt-contrib-clean": "^0.6.0"
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-jsonmin": "^0.2.4"
   }
 }
