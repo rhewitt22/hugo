@@ -74,23 +74,19 @@ $footer-color: $color-fws-dark-blue;
       display: inline-block;
       vertical-align: top;
       text-align: left;
-      margin-right: 5%;
+      width: 45%;
 
       li {
-
-        &:before {
-          content: '- '
-        }
   
         &:first-child {
           margin-left: 0;
           margin-bottom: $leading;
-    
-          &:before {
-            content: '';
-          }
         }
       }   
+    }
+
+    @media (min-width: 1500px) {
+      width: 22%
     }
   }
 }
