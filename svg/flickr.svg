@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 105 105" enable-background="new 0 0 105 105" xml:space="preserve">
+<g id="background">
+	<path fill="#FFFFFF" d="M93,105H12c-6.6,0-12-5.4-12-12V12C0,5.4,5.4,0,12,0h81c6.6,0,12,5.4,12,12v81C105,99.6,99.6,105,93,105z"
+		/>
+</g>
+<g id="left-circle">
+	<circle fill="#246ED7" cx="30.2" cy="52.8" r="18.5"/>
+</g>
+<g id="right-circle">
+	<circle fill="#FD0084" cx="75.3" cy="52.8" r="18.5"/>
+</g>
+</svg>
