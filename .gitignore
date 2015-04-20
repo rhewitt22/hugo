@@ -1,3 +1,4 @@
 node_modules
 build
 scss/unprefixed/
+site/static/css
