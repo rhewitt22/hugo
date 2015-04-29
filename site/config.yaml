@@ -1,11 +1,20 @@
 baseurl: http://fws.gov/southeast
 languageCode: en-us
 title: "US Fish & Wildlife Service: Southeast Region"
+copyright: "All original work is licensed under a Public Domain license."
+
+author:
+  name: U.S. Fish and Wildlife Service Southeast Region
+
+webmaster: roy_hewitt@fws.gov
 
 canonifyurls: true
 
 # Custom Defined Site Wide Variables
 params:
+  hero: 
+    img: monarch # default hero image (see img/hero for options)
+    description: A monarch butterfly resting on a pink flower
   analytics: UA-21323598-1
   twitter: usfwssoutheast
   github:  usfws
