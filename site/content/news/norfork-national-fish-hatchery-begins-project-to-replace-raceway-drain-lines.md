@@ -4,6 +4,8 @@ date: 2015-03-04
 
 thumbnail: img/thumbnail/norfork-nfh.jpg
 
+tags:
+  - national fish hatchery
 ---
 
 Norfork National Fish Hatchery, near Mountain Home, Arkansas, will begin replacing the hatchery’s drain lines to reduce erosion, but will remain open to the public during that time.  The first phase of the project starts around March 18, and will take four or five months to complete

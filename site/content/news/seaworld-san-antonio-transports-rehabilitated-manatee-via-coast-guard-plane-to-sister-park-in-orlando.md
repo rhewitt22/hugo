@@ -1,6 +1,9 @@
 ---
 title: SeaWorld San Antonio Transports Rehabilitated Manatee via U.S. Coast Guard Plane to Sister Park in Orlando, FL
 date: 2015-01-18
+
+tags:
+  - manatee
 ---
 SAN ANTONIO, Texas – Earlier today, SeaWorld’s Animal Rescue Team and the U.S. Fish and Wildlife Service (USFWS) sent Trinidad, a male Florida manatee, to SeaWorld Orlando in a U.S. Coast Guard search and rescue plane.
 

@@ -2,6 +2,10 @@
 title: 2015 Student Wildlife Art Contest Georgia Junior Duck Stamp Program Entries Due Postmarked by March 16th
 date: 2015-02-20
 thumbnail: img/thumbnails/junior-duck-stamp.jpg
+
+tags:
+  - georgia
+  - junior duck stamp
 ---
 
 The U.S. Fish and Wildlife Service is currently accepting student entries for the 2015 Georgia Junior Duck Stamp competition, a fun way to connect children with nature. All students from public and private schools, home-schools and art studios statewide are invited to compete for recognition, prizes and scholarships in this learning activity that promotes the conservation of America’s waterfowl, wetlands and waterfowl habitat. The deadline for all entries is to be postmarked by midnight Monday, March 16, 2015.

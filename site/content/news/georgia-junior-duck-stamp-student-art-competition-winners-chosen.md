@@ -7,6 +7,7 @@ credit: Amber Dong
 
 tags:
   - georgia
+  - junior duck stamp
 ---
 
 Amber Dong, 13, of Johns Creek, Georgia, is the winner of the annual 2015 Georgia Junior Duck Stamp Art Competition held Tuesday, April 7, 2015, at the Piedmont National Wildlife Refuge in Juliette, Georgia.  Five judges unanimously selected her acrylic rendition of a Wood Duck out of 532 total entries as the Georgia Best of Show. 

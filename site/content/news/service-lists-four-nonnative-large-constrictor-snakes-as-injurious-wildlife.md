@@ -6,6 +6,9 @@ date: 2015-03-06
 
 thumbnail: img/thumbnail/reticulated-python.jpg
 credit: Bjorn Lardner, Colorado State University
+
+tags:
+  - invasive species
 ---
 
 The U.S. Fish and Wildlife Service (Service) today declared the reticulated python, DeSchauensee’s anaconda, green anaconda and Beni anaconda as “injurious” under the Lacey Act. A fifth snake, the boa constrictor, is removed from consideration for listing as an injurious wildlife species.

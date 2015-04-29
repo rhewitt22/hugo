@@ -2,6 +2,9 @@
 title: Service to Enact Additional Manatee Protection Measures at Three Sisters Springs
 date: 2015-02-26
 thumbnail: img/thumbnail/manatee.jpg
+
+tags:
+  - manatee
 ---
 
 The U.S. Fish and Wildlife Service published its Final Environmental Assessment “Manatee Wildlife Viewing on Crystal River National Wildlife Refuge, Three Sisters Springs, Citrus County, Florida.”

@@ -4,6 +4,10 @@ date: "2015-03-10"
 
 thumbnail: img/thumbnail/black-pinesnake.jpg
 credit: Jim Lee, TNC
+
+tags:
+  - endangered species act
+  - critical habitat
 ---
 
 The U.S. Fish and Wildlife Service proposes to designate critical habitat for the black pinesnake under the Endangered Species Act (ESA).  A proposed rule to list the black pinesnake as threatened was published in the Federal Register on October 7, 2014.

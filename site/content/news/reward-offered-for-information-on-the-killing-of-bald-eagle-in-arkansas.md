@@ -1,6 +1,10 @@
 ---
 title: $7,500 Reward Offered for Information on the Killing of Bald Eagle in Arkansas
 date: 2015-02-05
+
+tags:
+  - bald eagle
+  - law enforcement
 ---
 
 LITTLE ROCK - The U.S. Fish and Wildlife Service and the Arkansas Game and Fish Commission are seeking information on the shooting of a bald eagle that was found on Arkansas Highway 10 in Pulaski County. The Humane Society of the United States, The Humane Society Wildlife Land Trust, the AGFC and the USFWS are offering a reward of up to $7,500 for information leading to a conviction of the person or persons responsible.

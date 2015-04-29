@@ -5,6 +5,9 @@ date: 2015-03-04
 hero: theel
 
 thumbnail: img/thumbnail/kirtlands-warbler.jpg
+
+tags:
+  - grants
 ---
 
 State efforts to protect species and habitats in greatest need of conservation received a boost today as ­the U.S. Fish and Wildlife Service (Service) announced over $45 million in funding provided through the State Wildlife Grant (SWG) program.
