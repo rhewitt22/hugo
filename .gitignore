@@ -2,5 +2,5 @@ node_modules
 build
 scss/unprefixed/
 site/static/css
-site/static/jssite/layouts/partials/svg-defs.svg
+site/layouts/partials/svg-defs.svg
 svg/compressed/
