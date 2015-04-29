@@ -10,7 +10,9 @@
         <h1>{{ .Title }}</h1>
         <ul class="section-summary">
         {{ range .Paginator.Pages }}
-          <li>{{ .Date.Format "Jan, _2 2006" }}: <a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{ if in .Params.categories "press release" }}
+          {{ .Render "summary" }}
+          {{ end }}
         {{ end }}
         </ul>
         <div class="pagination">
