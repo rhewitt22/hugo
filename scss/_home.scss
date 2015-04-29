@@ -1,6 +1,10 @@
 $launch-point-breakpoint: 800px;
 $priorities-breakpoint: 900px;
 
+.home-content {
+  padding: 0 3%;
+}
+
 .welcome-text {
   @media(min-width: 500px) {
     margin-left: 2 * $leading;
@@ -71,8 +75,8 @@ $priorities-breakpoint: 900px;
 }
 
 .news-teasers {
-  list-style-type: none;
-  padding: 0;
+  @include no-style-list;
+  @include clearfix;
   margin-top: 0;
 
   img {
@@ -89,6 +93,11 @@ $priorities-breakpoint: 900px;
       background-color: rgba(lighten($color-fws-green, 10), .3);
     }
   }
+}
+
+.newsroom-button {
+  @include button($color-fws-green);
+  float: right;
 }
 
 .news-hr {

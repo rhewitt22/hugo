@@ -6,7 +6,8 @@
     {{ partial "hero.html" . }}
     {{ partial "search-form.html" . }}
     <div class="wrapper">
-      <section id="main-content">
+      <section id="main-content"></section>
+      <section class="home-content">
         <h1>Welcome to the Southeast!</h1>
         <hr>
         <p class="welcome-text">We are passionate people working to conserve and enhance America's wild side.  We are public servants providing expert conservation consutation services to the states of Alabama, Arkansas, Florida, Georgia, Kentucky, Louisiana, Mississippi, North Carolina, South Carolina, Puerto Rico and the U.S. Virgin Islands.</p>
@@ -29,7 +30,7 @@
           {{ range first 3 (where .Site.Pages "Section" "news") }}
             {{ .Render "li" }}
           {{ end }}
-          <p><a href="{{ .Site.Params.baseurl }}/news">Go to the newsroom...</a></p>
+          <p><a href="{{ .Site.Params.baseurl }}/news" class="newsroom-button">Go to the newsroom...</a></p>
         </ul>
 
         <!-- <h2>Events</h2>
@@ -59,7 +60,6 @@
           </li>
         </ul>
       </section>
-      {{ partial "sidebar.html" . }}
     </div>
     {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}
