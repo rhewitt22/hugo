@@ -27,6 +27,8 @@
 }
 
 .read-more {
+  @include button;
+  margin-top: $leading;
   float: right;
 }
 
