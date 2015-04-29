@@ -6,6 +6,9 @@ date: 2015-04-01
 thumbnail: img/thumbnail/northern-long-eared-bat.jpg
 credit: Pete Pattavina, USFWS
 
+categories:
+ - press release
+
 tags:
   - endangered species act
 ---

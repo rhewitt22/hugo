@@ -4,6 +4,9 @@ date: 2015-03-04
 
 thumbnail: img/thumbnail/norfork-nfh.jpg
 
+categories:
+ - press release
+
 tags:
   - national fish hatchery
 ---

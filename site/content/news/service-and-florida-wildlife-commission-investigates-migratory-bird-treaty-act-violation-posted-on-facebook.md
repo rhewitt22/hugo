@@ -6,6 +6,9 @@ subtitle: Violation will be handled by Federal court in West Palm Beach
 thumbnail: img/thumbnail/great-horned-owl.jpg
 credit: Garry Tucker, USFWS
 
+categories:
+ - press release
+
 tags:
   - law enforcement
 ---

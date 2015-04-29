@@ -5,6 +5,9 @@ date: 2015-04-09
 thumbnail: img/thumbnail/ga-junior-duck-stamp-best-in-show-2015.jpg
 credit: Amber Dong
 
+categories:
+ - press release
+
 tags:
   - georgia
   - junior duck stamp

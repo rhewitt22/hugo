@@ -5,6 +5,9 @@ date: "2015-01-14"
 thumbnail: img/thumbnail/laurel-dace.jpg
 credit: Conservation Fisheries International
 
+categories:
+ - press release
+
 tags:
  - cookeville
 ---

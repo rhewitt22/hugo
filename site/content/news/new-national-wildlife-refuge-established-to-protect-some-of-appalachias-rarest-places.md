@@ -4,6 +4,9 @@ date: 2015-04-22
 
 hero: flower
 
+categories:
+ - press release
+
 tags:
   - national wildlife refuge
 

@@ -3,6 +3,9 @@ title: 2015 Student Wildlife Art Contest Georgia Junior Duck Stamp Program Entri
 date: 2015-02-20
 thumbnail: img/thumbnails/junior-duck-stamp.jpg
 
+categories:
+ - press release
+
 tags:
   - georgia
   - junior duck stamp

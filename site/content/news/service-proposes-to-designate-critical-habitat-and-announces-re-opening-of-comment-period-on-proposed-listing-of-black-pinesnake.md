@@ -5,6 +5,9 @@ date: "2015-03-10"
 thumbnail: img/thumbnail/black-pinesnake.jpg
 credit: Jim Lee, TNC
 
+categories:
+ - press release
+
 tags:
   - endangered species act
   - critical habitat

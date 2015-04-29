@@ -2,6 +2,9 @@
 title: SeaWorld San Antonio Transports Rehabilitated Manatee via U.S. Coast Guard Plane to Sister Park in Orlando, FL
 date: 2015-01-18
 
+categories:
+ - press release
+
 tags:
   - manatee
 ---

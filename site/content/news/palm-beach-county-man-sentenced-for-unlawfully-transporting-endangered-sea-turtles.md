@@ -5,6 +5,9 @@ date: 2015-02-26
 thumbnail: img/thumbnail/le-sea-turtle-eggs.jpg
 credit: FWC Law Enforcement
 
+categories:
+ - press release
+
 tags:
   - law enforcement
   - endangered species act

@@ -5,6 +5,9 @@ date: 2015-03-31
 thumbnail: img/thumbnail/injured-bald-eagle.jpg
 credit: Adam Caughern
 
+categories:
+ - press release
+
 tags:
   - louisiana
 ---

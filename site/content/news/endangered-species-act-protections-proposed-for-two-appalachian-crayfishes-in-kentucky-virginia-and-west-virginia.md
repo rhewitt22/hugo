@@ -5,6 +5,9 @@ date: 2015-04-06
 thumbnail: img/thumbnail/big-sandy-crayfish.jpg
 credit: Zachary Loughman, West Liberty University
 
+categories:
+ - press release
+
 tags:
   - endangered species act
 ---

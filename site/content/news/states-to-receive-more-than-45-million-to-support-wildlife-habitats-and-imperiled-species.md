@@ -6,6 +6,9 @@ hero: theel
 
 thumbnail: img/thumbnail/kirtlands-warbler.jpg
 
+categories:
+ - press release
+
 tags:
   - grants
 ---

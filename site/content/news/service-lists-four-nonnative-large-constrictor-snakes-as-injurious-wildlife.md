@@ -7,6 +7,9 @@ date: 2015-03-06
 thumbnail: img/thumbnail/reticulated-python.jpg
 credit: Bjorn Lardner, Colorado State University
 
+categories:
+ - press release
+
 tags:
   - invasive species
 ---

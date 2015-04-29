@@ -2,6 +2,9 @@
 title: $7,500 Reward Offered for Information on the Killing of Bald Eagle in Arkansas
 date: 2015-02-05
 
+categories:
+ - press release
+
 tags:
   - bald eagle
   - law enforcement
