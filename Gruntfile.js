@@ -123,8 +123,23 @@ module.exports = function(grunt) {
       },
       all: {
         files: {
-          "site/layouts/partials/svg-defs.svg": ["svg/*.svg"]
+          'site/layouts/partials/svg-defs.svg': ['svg/compressed/*.svg']
         }
+      }
+    },
+
+    svgmin: {
+      options: {
+        plugins: [
+          { removeViewBox: false },
+          { removeUselessStrokeAndFill: false }
+        ]
+      },
+      dist: {
+        expand: true,
+        cwd: 'svg',
+        src: ['*.svg'],
+        dest: 'svg/compressed'
       }
     },
 
@@ -155,14 +170,14 @@ module.exports = function(grunt) {
       },
       svg: {
         files: ['svg/**/*'],
-        tasks: ['svgstore:all', 'shell:hugo:dev']
+        tasks: ['newer:svgmin:dist', 'svgstore:all', 'shell:hugo:dev']
       }
     }
   });
 
   require('load-grunt-tasks')(grunt);
 
-  grunt.registerTask('default', ['clean:dev', 'connect:dev', 'svgstore:all', 'jshint', 'jsonmin:all', 'uglify:dev', 'sass:dev', 'autoprefixer:all', 'shell:hugo:dev', 'watch']);
-  grunt.registerTask('build', ['clean:dist', 'svgstore:all', 'jshint', 'jsonmin:all', 'uglify:dist', 'sass:dist', 'autoprefixer:all', 'shell:hugo']);
+  grunt.registerTask('default', ['clean:dev', 'connect:dev', 'svgmin:dist', 'svgstore:all', 'jshint', 'jsonmin:all', 'uglify:dev', 'sass:dev', 'autoprefixer:all', 'shell:hugo:dev', 'watch']);
+  grunt.registerTask('build', ['clean:dist', 'svgmin:dist', 'svgstore:all', 'jshint', 'jsonmin:all', 'uglify:dist', 'sass:dist', 'autoprefixer:all', 'shell:hugo']);
 
 };
