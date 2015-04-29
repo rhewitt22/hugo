@@ -1,3 +1,7 @@
 .register-list {
   @include no-style-list;
+
+  li {
+    @include card;
+  }
 }

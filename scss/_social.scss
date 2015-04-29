@@ -9,17 +9,24 @@
 }
 
 .shape-twitter {
-  fill: #55ACEE;
+  fill: $color-twitter;
 }
 
 .shape-facebook {
-  fill: #43609c;
+  fill: $color-facebook;
 }
 
 .shape-youtube {
-  fill: #e52c27;
+  fill: $color-youtube;
 }
 
 .shape-rss {
-  fill: #F79537;
+  fill: $color-rss;
+}
+
+.social-media-list {
+  @media (min-width: 1100px) {
+    text-align: center;
+    margin:0;
+  }
 }
