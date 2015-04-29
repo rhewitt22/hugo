@@ -26,6 +26,23 @@
   }
 }
 
+.news-tags {
+  margin-top: 1.5*$leading;
+  display: inline-block;
+
+  a {
+    text-decoration: none;
+  }
+
+  .tag {
+    @include tag;
+
+    &:hover {
+      background-color: $color-fws-green;
+    }
+  }
+}
+
 .read-more {
   @include button;
   margin-top: $leading;
