@@ -18,6 +18,7 @@
     "grunt-newer": "^1.1.0",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-jsonmin": "^0.2.4",
-    "grunt-svgstore": "^0.5.0"
+    "grunt-svgstore": "^0.5.0",
+    "grunt-svgmin": "^2.0.1"
   }
 }
