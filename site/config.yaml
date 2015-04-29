@@ -6,7 +6,7 @@ copyright: "All original work is licensed under a Public Domain license."
 author:
   name: U.S. Fish and Wildlife Service Southeast Region
 
-webmaster: roy_hewitt@fws.gov
+
 
 canonifyurls: true
 
@@ -21,6 +21,7 @@ params:
   facebook: usfwssoutheast
   flickr: usfwssoutheast
   instagram: usfws
+  webmaster: roy_hewitt@fws.gov # Used in footer
 
 permalinks:
   news: /:section/:year/:month/:filename/

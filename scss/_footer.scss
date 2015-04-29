@@ -93,6 +93,9 @@ $footer-color: $color-fws-dark-blue;
 
 .footer-links {
   text-align: center;
+  p {
+    color: #fff;
+  }
 
   ul {
     padding: 0;
