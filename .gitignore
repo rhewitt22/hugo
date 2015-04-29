@@ -3,3 +3,4 @@ build
 scss/unprefixed/
 site/static/css
 site/static/jssite/layouts/partials/svg-defs.svg
+svg/compressed/
