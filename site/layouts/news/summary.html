@@ -1,10 +1,8 @@
-<li>
-  <article class="news-story">
-    <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-    <span class="news-date">{{ .Date.Format "Jan _2, 2006"}}</span>
+<article class="news-story">
+  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  <span class="news-date">{{ .Date.Format "Jan _2, 2006"}}</span>
 
-    <div class="news-summary">{{ .Summary }}</div>
+  <div class="news-summary">{{ .Summary }}</div>
 
-    {{ if .Truncated }}<a class="read-more" href="{{ .Permalink }}">Read full story...</a>{{ end }}
-  </article>
-</li>
+  {{ if .Truncated }}<a class="read-more" href="{{ .Permalink }}">Read full story...</a>{{ end }}
+</article>

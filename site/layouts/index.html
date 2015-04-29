@@ -5,8 +5,8 @@
     {{ partial "header.html" . }}
     {{ partial "hero.html" . }}
     {{ partial "search-form.html" . }}
-    <section id="main-content">
-      <div class="wrapper">
+    <div class="wrapper">
+      <section id="main-content">
         <h1>Welcome to the Southeast!</h1>
         <hr>
         <p class="welcome-text">We are passionate people working to conserve and enhance America's wild side.  We are public servants providing expert conservation consutation services to the states of Alabama, Arkansas, Florida, Georgia, Kentucky, Louisiana, Mississippi, North Carolina, South Carolina, Puerto Rico and the U.S. Virgin Islands.</p>
@@ -24,7 +24,13 @@
         </ul>
 
         <h2>Latest News</h2>
-        {{ partial "news-teasers.html" . }}
+        <hr class="news-hr">
+        <ul class="news-teasers">
+          {{ range first 3 (where .Site.Pages "Section" "news") }}
+            {{ .Render "li" }}
+          {{ end }}
+          <p><a href="{{ .Site.Params.baseurl }}/news">Go to the newsroom...</a></p>
+        </ul>
 
         <!-- <h2>Events</h2>
         {% include events.html %} -->
@@ -52,8 +58,9 @@
             <img src="{{ .Site.Params.baseurl }}/img/katrina.jpg" alt="">
           </li>
         </ul>
-      </div>
-    </section>
+      </section>
+      {{ partial "sidebar.html" . }}
+    </div>
     {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}
   </body>

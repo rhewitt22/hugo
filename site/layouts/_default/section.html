@@ -5,19 +5,21 @@
     {{ partial "header.html" . }}
     {{ partial "hero.html" . }}
     {{ partial "search-form.html" . }}
-    <section id="main-content">
-      <div class="wrapper">
-        <h1>{{ .Title }}</h1>
-        <ul class="section-summary">
-        {{ range where .Paginator.Pages "Section" "news" }}
-          {{ .Render "summary" }}
-        {{ end }}
-        </ul>
-        <div class="pagination">
-        {{ partial "pagination.html" . }}
+    <div class="wrapper">
+      <section id="main-content">
+          <h1>{{ .Title }}</h1>
+          <ul class="section-summary">
+          {{ range where .Paginator.Pages "Section" "news" }}
+            {{ .Render "summary" }}
+          {{ end }}
+          </ul>
+          <div class="pagination">
+          {{ partial "pagination.html" . }}
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+      {{ partial "sidebar.html" . }}
+    </div>
     {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}
   </body>

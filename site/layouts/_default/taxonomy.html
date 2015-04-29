@@ -5,19 +5,20 @@
     {{ partial "header.html" . }}
     {{ partial "hero.html" . }}
     {{ partial "search-form.html" . }}
-    <section id="main-content">
-      <div class="wrapper">
+    <div class="wrapper">
+      <section id="main-content">
         <h1>{{ .Title }}</h1>
         <ul class="section-summary">
-        {{ range where .Paginator.Pages "Section" "news" }}
-          {{ .Render "summary" }}
+        {{ range .Paginator.Pages }}
+          <li>{{ .Date.Format "Jan, _2 2006" }}: <a href="{{ .Permalink }}">{{ .Title }}</a></li>
         {{ end }}
         </ul>
         <div class="pagination">
         {{ partial "pagination.html" . }}
         </div>
-      </div>
-    </section>
+      </section>
+      {{ partial "sidebar.html" . }}
+    </div>
     {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}
   </body>
