@@ -22,6 +22,7 @@ module.exports = function(grunt) {
           'site/static/js/about.js': ['js/vendor/jquery.easyModal.js', 'js/about.js'],
           'site/static/js/office-list.js': ['js/office-list.js'],
           'site/static/js/changing-world.js': ['js/changing-world.js'],
+          'site/static/js/species-profile.js': ['js/vendor/moment.min.js','js/species-profile.js'],
           'site/static/js/map.js': [
             'js/vendor/leaflet.js', 
             'js/vendor/leaflet.markercluster.min.js', 

@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }}
+    {{ partial "hero.html" . }}
+    {{ partial "search-form.html" . }}
+    <div class="wrapper">
+      <section id="main-content">
+        <h1>{{ .Title }}</h1>
+        {{ .Content }}
+        {{ partial "species-profile.html" . }}
+      </section>
+      {{ partial "sidebar.html" . }}
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>
