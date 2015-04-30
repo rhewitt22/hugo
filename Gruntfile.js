@@ -23,6 +23,7 @@ module.exports = function(grunt) {
           'site/static/js/office-list.js': ['js/office-list.js'],
           'site/static/js/changing-world.js': ['js/changing-world.js'],
           'site/static/js/species-profile.js': ['js/vendor/moment.min.js','js/species-profile.js'],
+          'site/static/js/staff.js': ['js/vendor/handlebars.3.0.2.min.js', 'js/staff.js'],
           'site/static/js/map.js': [
             'js/vendor/leaflet.js', 
             'js/vendor/leaflet.markercluster.min.js', 

@@ -1,0 +1,105 @@
+employees:
+  - name: Steve Alexander
+    position: Contaminants
+    phone: 931-528-6581
+    email: steven_alexander@fws.gov
+
+  - name: Tammy Bilbrey
+    position: Pre-development Consultation
+    phone: 931-525-4987
+    email: tammy_bilbrey@fws.gov
+
+  - name: Brand Bingham
+    position: Private Lands
+    phone: 931-525-4975
+    email: bradley_bingham@fws.gov
+
+  - name: Geoff Call
+    position: Recovery
+    phone: 931-528-6481
+    email: geoff_call@fws.gov
+
+  - name: Stephanie Chance
+    position: Listing/At-Risk Species
+    phone: 931-528-6481
+    email: stephanie_chance@fws.gov
+
+  - name: Jason Duke
+    position: GIS/IT
+    phone: 931-525-4986
+    email: jason_duke@fws.gov
+
+  - name: Emily Granstaff
+    position: GIS/SARP - Pathways
+    phone: 931-525-4993
+    email: emily_granstaff@fws.gov
+
+  - name: John Griffith
+    position: Permits - TDOT
+    phone: 931-525-4995
+    email: john_griffith@fws.gov
+
+  - name: Debbie Harris
+    position: GIS
+    phone: 931-525-4988
+    email: debbie_harris@fws.gov
+
+  - name: Sarah Harrison
+    position: Permits
+    phone: 931-525-4991
+    email: sarrah_harrison@fws.gov
+
+  - name: Mary Jennings
+    position: Field Supervisor
+    phone: 931-528-6481
+    email: mary_e_jennings@fws.gov
+
+  - name: Brandon Maynard
+    position: GIS/IT
+    phone: 931-525-4976
+    email: brandon_maynard@fws.gov
+
+  - name: Ken McDonald
+    position: Alternative Energy
+    phone: 931-525-4990
+    email: kenneth_mcdonald@fws.gov
+
+  - name: David Pelren
+    position: Permits
+    phone: 931-525-4974
+    email: david_pelren@fws.gov
+
+  - name: Todd Shaw
+    position: Recovery
+    phone: 931-525-4985
+    email: ross_shaw@fws.gov
+
+  - name: Peggy Shute
+    position: Assistant Field Supervisor
+    phone: 931-528-6481
+    email: peggy_shute@fws.gov
+
+  - name: Sandra Silvey
+    position: Office Assistant
+    phone: 931-525-4970
+    email: sandra_silvey@fws.gov
+
+  - name: Kurt Snider
+    position: GIS/IT
+    phone: 931-525-4989
+    email: kurt_snider@fws.gov
+
+  - name: Matt Snider
+    position: GIS - Pathways
+    phone: 931-525-4994
+    email: matthew_snider@fws.gov
+
+  - name: Robbie Sykes
+    position: Permits
+    phone: 931-525-4979
+    email: robbie_sykes@fws.gov
+
+  - name: Bryan Watkins
+    position: Private Lands
+    phone: 931-525-4996
+    email: timothy_watkins@fws.gov

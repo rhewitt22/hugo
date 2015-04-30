@@ -1,0 +1,15 @@
+{{ $section := .Page.Section }}
+{{ $taxonomy := index .Page.Site.Data.staff $section }}
+
+<form class="search-employees">
+  <input type="search" placeholder="Filter Employees...">
+</form>
+
+<ul class="staff-list">
+{{ range $taxonomy.employees }}
+  <li class="employee">
+    <h3><span class="employee-name">{{ .name }}</span>, <span class="employee-position">{{ .position }}</span></h3>
+    <p>Contact: <span class="employee-email">{{ .email }}</span> <span class="employee-phone">{{ .phone }}</span></p>
+  </li>
+{{ end }}
+</ul>

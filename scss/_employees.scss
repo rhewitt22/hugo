@@ -1,0 +1,16 @@
+.staff-list {
+  @include no-style-list;
+}
+.employee {
+  @include card;
+}
+
+.search-employees {
+  width: 100%;
+  max-width: 350px;
+  margin: auto;
+
+  input {
+    width: 100%;
+  }
+}
