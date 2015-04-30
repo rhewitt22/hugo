@@ -4,3 +4,4 @@ scss/unprefixed/
 site/static/css
 site/layouts/partials/svg-defs.svg
 svg/compressed/
+site/static/js
