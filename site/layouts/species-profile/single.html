@@ -5,13 +5,16 @@
     {{ partial "header.html" . }}
     {{ partial "hero.html" . }}
     {{ partial "search-form.html" . }}
+    {{ partial "scroll-nav.html" . }}
     <div class="wrapper">
-      <section id="main-content">
+      <section id="main-content"></section>
+      <section class="species-profile-wrapper">
         <h1>{{ .Title }}</h1>
-        {{ .Content }}
-        {{ partial "species-profile.html" . }}
+        <div class="species-profile">
+          {{ .Content }}
+          {{ partial "species-profile.html" . }}
+        </div>
       </section>
-      {{ partial "sidebar.html" . }}
     </div>
     {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}

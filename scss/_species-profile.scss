@@ -1,3 +1,20 @@
+.species-profile-wrapper {
+
+  h1 {
+    margin-left: 3%;
+  }
+
+  @media (min-width: 850px) {
+    .register-list {
+      margin-right: 200px;
+    }
+  }
+}
+
+.species-profile {
+  padding: 3%;
+}
+
 .species-codes {
   @include visuallyhidden;
 }

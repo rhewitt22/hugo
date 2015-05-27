@@ -9,7 +9,9 @@
       <section id="main-content">
           <h1>{{ .Title }}</h1>
           <ul class="section-summary">
-          {{ range where .Paginator.Pages "Section" "news" }}
+          {{ $section := lower .Title }}
+          {{ $section }}
+          {{ range where .Paginator.Pages "Section" $section }}
             {{ .Render "summary" }}
           {{ end }}
           </ul>

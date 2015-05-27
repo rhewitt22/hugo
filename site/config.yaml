@@ -6,8 +6,7 @@ copyright: "All original work is licensed under a Public Domain license."
 author:
   name: U.S. Fish and Wildlife Service Southeast Region
 
-
-
+pluralizelisttitles: false
 canonifyurls: true
 
 # Custom Defined Site Wide Variables

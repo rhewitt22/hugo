@@ -6,11 +6,46 @@
       template = Handlebars.compile(source),
       $registerItems = $('.register-list');
 
-  var url = 'https://www.federalregister.gov/api/v1/articles.json',
-  nextPageUrl = null;
-  // Call the Federal Register API
-  function sendRequest (url) {
+  var $siteSearch = $('.site-search'),
+      $sidebar = $('.side-scroll'),
+      $speciesProfile = $('.species-profile'),
+      $scrollNav = $('.scroll-nav'),
+      $window = $(window);
 
+  // Activate scroll navigation
+  $speciesProfile.scrollNav({
+    sections: 'h3',
+    insertTarget: '.side-scroll',
+    insertLocation: 'appendTo',
+    headlineText: 'Sections'
+  });
+  
+  $sidebar.on('click', function() {
+    $('.scroll-nav').toggleClass('show');
+  });
+  
+  $window.scroll(function(){
+    var offset = $siteSearch.offset(),
+        searchBottom = offset.top + $siteSearch.height();
+
+      if ($(this).scrollTop() > searchBottom) {
+        $sidebar.addClass('fixed');
+      } else {
+        $sidebar.removeClass('fixed');
+      }
+  });
+  
+  $window.resize(function() {
+    if ($window.width() > 850) {
+      $scrollNav.show();
+    } else {
+      $scrollNav.hide();
+    }
+  });
+  
+  // Call the Federal Register API
+  function sendRequest () {
+    var url = 'https://www.federalregister.gov/api/v1/articles.json';
     $.ajax({
       url: url,
       data: {
@@ -22,20 +57,19 @@
       },
       dataType: 'jsonp',
       success: function( response ) {
-        console.log(response);
-        $registerItems.append( template(response) );
-        formatDates();
+        var formatted = formatDates(response);
+        $registerItems.append( template(formatted) );
       }
     });
   }
 
-  function formatDates() {
-    $('.publication-date').each(function (i, el) {
-      var date = $(el).text();
-      var formatted = moment(date).format('MMMM D, YYYY');
-      $(el).text(formatted);
+  function formatDates(data) {
+    var documents = data.results;
+    $.each(documents, function (i, document) {
+      this.publication_date = moment(this.publication_date).format('MMMM D, YYYY');
     });
+    return documents;
   }
 
-  sendRequest(url);
+  sendRequest();
 })();

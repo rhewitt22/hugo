@@ -1,0 +1,95 @@
+@media (max-width: 850px) and (min-width: 1px) {
+  .side-scroll {
+    width: 100%;
+    background-color: $color-fws-green;
+    padding: 15px;
+
+    button {
+      display: block;
+      margin: auto;
+    }
+
+    &.fixed {
+      position: fixed;
+      top: 0;
+    }
+    
+    .scroll-nav {
+      display: none;
+      margin-top: $leading;
+    }
+    
+    .show {
+      display: block;
+    }
+      
+    .scroll-nav__heading {
+      text-align: center;
+      display: block;
+      color: white;
+    }
+  }
+}
+
+.side-scroll a {
+  color: #fff;
+} 
+
+@media (min-width: 850px) {
+  .side-scroll {
+    width: 175px;
+    float: right;
+    margin: 3% 3% 0 0;
+    display: block;
+    height: auto;
+
+    button {
+      display: none;
+    }
+    
+    a {
+      text-decoration: none;
+      
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+    &.fixed {
+      position: fixed;
+      top: 25px;
+      right: 25px;
+      margin: 0;
+    }
+  }
+  
+  .scroll-nav__wrapper {
+    padding: 15px;
+    background-color: $color-fws-green;
+    border-radius: 5px;
+  }
+  
+  .scroll-nav__heading {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fff;
+  }
+  
+  .scroll-nav__item {
+    margin-bottom: 5px;
+  }
+}
+
+.side-scroll  {
+  ol {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+}
+
+.scroll-nav__item.active {
+  font-weight: bold;
+}

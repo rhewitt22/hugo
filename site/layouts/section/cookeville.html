@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }}
+    {{ partial "hero.html" . }}
+    {{ partial "search-form.html" . }}
+    <div class="wrapper">
+      <section id="main-content">
+        <h1>Cookeville Field Office</h1>
+
+        <h2>Latest News</h2>
+        <hr class="news-hr">
+        <ul class="news-teasers">
+          {{ range first 5 .Site.Taxonomies.tags.cookeville }}
+            <li><a href="{{ .Page.Permalink }}">{{ .Page.Title }}</a></li>
+          {{ end }}
+        </ul>
+        <p><a href="{{ .Site.Params.baseurl }}/news" class="newsroom-button">Go to the newsroom...</a></p>
+        </section>
+        {{ partial "sidebar.html" . }}
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

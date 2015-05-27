@@ -12,6 +12,8 @@
         {{ range .Paginator.Pages }}
           {{ if in .Params.categories "press release" }}
           {{ .Render "summary" }}
+          {{ else }}
+          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
           {{ end }}
         {{ end }}
         </ul>

@@ -26,6 +26,12 @@
       </a>
     </li>
   </ul>
+  {{ if .IsPage }}{{.Section }}{{ end }}
+  
+  <ul>
+  {{ range where .Site.Pages "Section" "cookeville" }}
+    <li><a href="{{ .Permalink }}">{{.Title}}</a></li>
+  {{ end }}
+  </ul>
 
-  <p>This is the sidebar.  We can put supporting information here depending on the page you're currently on.</p>
 </aside>
