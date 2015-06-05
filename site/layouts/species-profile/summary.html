@@ -1,0 +1,6 @@
+<article class="species-teaser">
+  <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+  <p>{{ .Summary }}</p>
+  <div class="news-tags">{{ range .Params.tags }} <a href="/tags/{{ urlize . }}"><span class="tag"><small>{{ title . }}</small></span></a>{{ end }}</div>
+  <a class="read-more" href="{{ .Permalink }}">Species Profile</a>
+</article>

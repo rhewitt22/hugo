@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }}
+    {{ partial "hero.html" . }}
+    {{ partial "search-form.html" . }}
+    <div class="wrapper">
+      <section id="main-content">
+        <h1>{{ .Title }}</h1>
+        <ul class="section-summary">
+        {{ range where .Paginator.Pages.ByDate "Section" "events" }}
+          {{ if ge .Date.Unix .Now.Unix }}
+          {{ .Render "summary" }}
+          {{ end }}
+        {{ end }}
+        </ul>
+        <div class="pagination">
+        {{ partial "pagination.html" . }}
+        </div>
+      </section>
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

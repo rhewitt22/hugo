@@ -5,16 +5,43 @@
   }
 
   @media (min-width: 850px) {
-    .register-list {
-      margin-right: 200px;
+    .species-profile {
+      margin-right: 225px;
+    }
+  }
+
+  @media (min-width: 1090px) {
+    h1 {
+      margin: $leading 250px 0 250px;
+      text-align: center;
     }
   }
 }
 
 .species-profile {
+  max-width: 850px;
+  margin: auto;
   padding: 3%;
 }
 
 .species-codes {
   @include visuallyhidden;
+}
+
+.species-teaser {
+  @include card;
+}
+
+.taxon-list {
+  @include no-style-list;
+
+  li {
+    @include card;
+    @include clearfix;
+  }
+
+  .button {
+    float: right;
+    margin: $leading 0 0 0;
+  }
 }

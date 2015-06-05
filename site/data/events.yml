@@ -1,0 +1,42 @@
+items:
+  - name: Veterans Appreciation Fishing Rodeo
+    date: 2015-06-08
+    location: Chattahoochee Forest National Fish Hatchery
+    description: All U.S. Military Veterans are invited to attend. Rock Creek is stocked with beautiful Rainbow Trout for great fishing. Registration begins at 9 a.m
+    tags:
+      - georgia
+
+  - name: Annual North American Butterfly Association Butterfly Count
+    date: 2015-06-12
+    location: Savannah National Wildlife Refuge
+    description: The 2nd Annual North American Butterfly Association (NABA) Butterfly Count at Savannah National Wildlife Refuge. Participants should meet at the Savannah NWR Visitor Center, 694 Beech Hill Lane, Hardeeville, SC 29927 (off Hwy 17) at 9:00 a.m. to split into teams to count butterflies in various locations within the refuge. Teams will regroup at the Visitor Center around 3:15 p.m. to compile count data and review photos/confirm species identifications. Participants should bring plenty of water, sun protection, snacks, lunch, binoculars, cameras, and field guides.
+    tags:
+      - georgia
+
+  - name: Special Kids Fishing Rodeo
+    date: 2015-06-13
+    location: Bayou Teche National Wildlife Refuge
+    description: These events, held in May each year, are for special needs youth from area schools. Volunteers work with the children to share the joys of fishing and the natural world
+    tags:
+      - louisiana
+
+  - name: Seniors Fishing Rodeo
+    date: 2015-07-05
+    location: Chattahoochee Forest National Fish Hatchery
+    description: Adults age 55 and older are invited to the hatchery each year to enjoy great trout fishing opportunities and prizes. Registration begins at 9 a.m.
+    tags:
+      - georgia
+
+  - name: Family Fishing Festival
+    date: 2015-07-06
+    location: Chattahoochee Forest National Fish Hatchery
+    description: Youth ages 16 and under have excellent trout fishing opportunities, along with expert demonstrations, free food, educational exhibits, fun activities and prizes.
+    tags:
+      - georgia
+
+  - name: Wings Over Water Wildlife Festival
+    date: 2015-10-20
+    location: Mandalay National Wildlife Refuge
+    description: Each fall, Wings Over Water Wildlife Festival plays host to hundreds of visitors who travel from near and far. Set for Oct. 20 - 25, 2015, the six-day event is held in the shoulder season when lodging rates are lower, there is less traffic and the weather is mild. The Refuge is home to a diverse and fascinating array of wildlife to view, waterways to paddle, art to enjoy, and history to learn. In addition to marine life, black bears, and hundreds of species of birds are waiting to be spotted.
+    tags:
+      - louisiana

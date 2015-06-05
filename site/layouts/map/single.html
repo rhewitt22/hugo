@@ -10,28 +10,35 @@
 
     <link rel="stylesheet" href="/css/map.css">
     {{ partial "open-graph.html" }}
+    {{ partial "svg-defs.svg" }}
   </head>
   <body>
     <a class="link-to-list" href="/offices/">Would you prefer to explore the offices as a list instead of a map?</a>
     <div id="map">
       <header class="top-header">
-        <h3 class="region-heading"><a href="/">U.S. Fish &amp; Wildlife Service Southeast Region</a></h3>
-        <a href="http://www.fws.gov/" title="U.S. Fish &amp; Wildlife Home"><img class="logo" src="/img/logo.png" alt="Logo of the U.S. Fish &amp; Wildlife Service"></a>
+        <h3 class="region-heading region-short"><a href="/">Southeast</a></h3>
+        <h3 class="region-heading region-medium"><a href="/">Southeast Region</a></h3>
+        <h3 class="region-heading region-full"><a href="/">U.S. Fish &amp; Wildlife Service Southeast Region</a></h3>
+        <a href="http://www.fws.gov/" title="U.S. Fish &amp; Wildlife Home">
+          <img class="logo" src="/img/logo.png" alt="Logo of the U.S. Fish &amp; Wildlife Service">
+        </a>
         <form>
           <input type="search" placeholder="Search..." id="autocomplete-search">
         </form>
       </header>
       <div class="modal about">
+        <span class="close-button" title="Close">x</span>
         <h2>About this map</h2>
         <p>Tiles Courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> <img src="http://developer.mapquest.com/content/osm/mq_logo.png"> &mdash; Map data &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a></p>
         <p><a href="#help" class="trigger-help">Show help</a></p>
       </div>
       <div class="modal help">
+        <span class="close-button" title="Close">x</span>
         <h2>How to use this map</h2>
-
-        <p>Would you prefer to see a <a href="/offices/list">list of offices</a>?</p>
+        <p>You can pan and zoom on this map using your mouse and scroll wheel, or the plus (+) and minus (-) buttons in the bottom left corner.  If you know the name of the office you're looking for use the search box in the top right corner. You can toggle the different types of offices on and off using the checkboxes in the lower right corner.</p>
+        <p>Would you prefer to see a <a href="/offices">list of offices</a>?</p>
         <form>
-          <input type="checkbox" name="hide-dialog" id="hide-dialog"> Do not show this dialog again.
+          <input type="checkbox" name="hide-dialog" id="hide-dialog"><label for="hide-dialog">Do not show this dialog again.</label>
         </form>
         <p><a href="#about" class="trigger-about">About this map</a></p>
       </div>

@@ -7,21 +7,23 @@
     {{ partial "search-form.html" . }}
     <div class="wrapper">
       <section id="main-content">
-        <h1>{{ .Title }}</h1>
-        <ul class="section-summary">
-        {{ range .Paginator.Pages }}
+      {{ partial "breadcrumbs.html" . }}
+        <h1>{{ .Title }}</h1><br>
+        {{ range .Paginator.Pages.ByDate }}
           {{ if in .Params.categories "press release" }}
           {{ .Render "summary" }}
+          {{ else if in .Params.categories "profile" }}
+          {{ .Render "summary" }}
+          {{ else if in .Params.categories "event" }}
+          {{ .Render "summary" }}
           {{ else }}
-          <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          <article><a href="{{ .Permalink }}">{{ .Title }}</a></article>
           {{ end }}
         {{ end }}
-        </ul>
         <div class="pagination">
         {{ partial "pagination.html" . }}
         </div>
       </section>
-      {{ partial "sidebar.html" . }}
     </div>
     {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}

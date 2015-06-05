@@ -1,0 +1,7 @@
+<article class="event-summary">
+  <h3>{{ .Title }}</h3>
+  <span class="event-date">{{ .Date.Format "Jan _2, 2006"}}</span>
+  <p class="event-details">{{ .Summary }}</p>
+  <div class="news-tags">{{ range .Params.tags }} <a href="/tags/{{ urlize . }}"><span class="tag"><small>{{ title . }}</small></span></a>{{ end }}</div>
+  {{ if .Truncated }}<a class="read-more" href="{{ .Permalink }}">More Details</a>{{ end }}
+</article>

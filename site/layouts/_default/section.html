@@ -7,20 +7,18 @@
     {{ partial "search-form.html" . }}
     <div class="wrapper">
       <section id="main-content">
-          <h1>{{ .Title }}</h1>
-          <ul class="section-summary">
-          {{ $section := lower .Title }}
-          {{ $section }}
-          {{ range where .Paginator.Pages "Section" $section }}
-            {{ .Render "summary" }}
-          {{ end }}
-          </ul>
-          <div class="pagination">
-          {{ partial "pagination.html" . }}
-          </div>
+        {{ partial "breadcrumbs.html" . }}
+        <h1>{{ .Title }}</h1>
+        <ul class="section-summary">
+        {{ $section := lower .Title }}
+        {{ range where .Paginator.Pages "Section" $section }}
+          {{ .Render "summary" }}
+        {{ end }}
+        </ul>
+        <div class="pagination">
+        {{ partial "pagination.html" . }}
         </div>
       </section>
-      {{ partial "sidebar.html" . }}
     </div>
     {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}

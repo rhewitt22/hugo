@@ -5,5 +5,5 @@
   <div class="news-summary">{{ .Summary }}</div>
 
   <div class="news-tags">{{ range .Params.tags }} <a href="/tags/{{ urlize . }}"><span class="tag"><small>{{ title . }}</small></span></a>{{ end }}</div>
-  {{ if .Truncated }}<a class="read-more" href="{{ .Permalink }}">Read full story...</a>{{ end }}
+  {{ if .Truncated }}<a class="read-more" href="{{ .Permalink }}">Full Story</a>{{ end }}
 </article>

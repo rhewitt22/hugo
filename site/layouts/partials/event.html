@@ -1,0 +1,8 @@
+<li>
+  <h2>{{ .name }}</h2>
+  <p class="event-date">{{ dateFormat "Jan 2, 2006" .date }}</p>
+  <p class="event-location">{{ .location }}</p>
+  <p>{{ .description }}</p>
+  <div class="news-tags">{{ range .tags }} <a href="/tags/{{ urlize . }}"><span class="tag"><small>{{ title . }}</small></span></a>{{ end }}</div>
+  <p class="event-more"><a href="">More information...</a></p>
+</li>

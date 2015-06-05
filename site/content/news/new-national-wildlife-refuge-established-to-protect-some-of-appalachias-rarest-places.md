@@ -2,7 +2,7 @@
 title: New National Wildlife Refuge Established to Protect Some of Appalachia’s Rarest Places
 date: 2015-04-22
 
-hero: flower
+hero: flowers
 
 categories:
  - press release

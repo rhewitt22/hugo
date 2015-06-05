@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }}
+    {{ partial "hero.html" . }}
+    {{ partial "search-form.html" . }}
+    <div class="wrapper">
+      <section id="main-content">
+      {{ partial "breadcrumbs.html" . }}
+        <h1>{{ .Title }}</h1>
+        <p>Check out the list of species profiles below:</p>
+        {{ $taxon := .Params.taxon }}
+        <ul class="taxon-list">
+        {{ range where .Site.Taxonomies.categories.profile.Pages "Params.taxon" $taxon }}
+          {{ .Render "summary" }}
+        {{ end }}
+        </ul>
+      </section>
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

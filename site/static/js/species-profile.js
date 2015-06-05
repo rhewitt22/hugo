@@ -4652,7 +4652,8 @@ THE SOFTWARE.
         sections: "h3",
         insertTarget: ".side-scroll",
         insertLocation: "appendTo",
-        headlineText: "Sections"
+        headlineText: "Sections",
+        scrollOffset: 75
     });
     $sidebar.on("click", function() {
         $(".scroll-nav").toggleClass("show");

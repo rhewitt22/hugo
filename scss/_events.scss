@@ -1,0 +1,42 @@
+.event-summary {
+  @include card;
+}
+
+.event-list {
+  @include no-style-list;
+
+  li {
+    @include clearfix;
+  }
+}
+
+.event-details {
+  @media (min-width: 850px){
+    margin-top: -4em;
+  }
+}
+
+.event-date {
+  position: relative;
+  font-weight: bold;
+  color: $color-body-text;
+  top: 10px;
+
+  @media (min-width: 850px){
+    background: #d64b4b;
+    background-image: linear-gradient(to bottom, #d64b4b, #ab2c2c);
+    top: -50px;
+    left: -80px;
+    width: 55px;
+    padding: 0.5em;
+    margin: 0;
+    color: white;
+    list-style-type: none;
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    font-weight: normal;
+  }
+}

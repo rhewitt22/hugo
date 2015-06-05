@@ -9984,18 +9984,18 @@
     "use strict";
     var map = createMap(), layers, icons = {
         refuge: L.icon({
-            iconUrl: "/img/map/blue-goose75.png",
+            iconUrl: "../../img/map/blue-goose75.png",
             iconSize: [ 75, 40 ],
             popupAnchor: [ 7, -17 ]
         }),
         hatchery: L.icon({
-            iconUrl: "/img/map/fish75.png",
+            iconUrl: "../../img/map/fish75.png",
             iconSize: [ 75, 66 ],
             popupAnchor: [ 7, -27 ]
         })
     };
     L.Icon.Default.imagePath = "../img/map";
-    $.getJSON("/js/offices.js", function(geojson) {
+    $.getJSON("../../js/offices.js", function(geojson) {
         layers = addLayers(map, geojson);
         initAutocomplete(map, geojson);
         registerLegendEvents(layers);
@@ -10043,7 +10043,7 @@
         }).addTo(map);
         L.control.layers(null, toggles, {
             collapsed: false,
-            position: "topleft"
+            position: "bottomright"
         }).addTo(map);
         setZoom(offices, cluster);
         map.addLayer(cluster);
@@ -10055,8 +10055,21 @@
             cluster: cluster
         };
     }
+    function getIcons(feature) {
+        var props = feature.properties;
+        var icons = [ [ "office", "Visitor Center" ], [ "binoculars", "Wildlife Observation" ], [ "camera", "Wildlife Photography" ], [ "trails", "Hiking Trails" ], [ "biking", "Biking" ], [ "picnic-shelter", "Picnic Shelter" ], [ "hunting", "Hunting" ], [ "fishing", "Fishing" ], [ "canoeing", "Small water craft" ], [ "boat-launch", "Boat lanch" ], [ "lighthouse", "Lighthouse" ] ];
+        var svg = "<div class='office-icons'>";
+        if (props.activities) {
+            _.each(icons, function(activity) {
+                if (_.contains(props.activities, activity[0])) svg += "<svg class='icon'><g><title>" + activity[1] + "</title><use xlink:href='#icon-" + activity[0] + "'/></g></svg>"; else svg += "<svg class='icon-disabled'><g><title>" + activity[1] + "</title><use xlink:href='#icon-" + activity[0] + "'/></g></svg>";
+            });
+        }
+        svg += "</div>";
+        return svg;
+    }
     function onEachOffice(feature, layer) {
-        var popup = _.template('<h2><a href="<%= url %>"><%= name %></a></h2>' + '<img src=""/>' + "<p><%= city %>, <%= state %><br>" + '<a href="">Directions</a></p>'), html = popup(feature.properties);
+        var icons = getIcons(feature);
+        var popup = _.template('<h2><a href="<%= url %>"><%= name %></a></h2>' + '<p id="popup-office-location"><%= city %>, <%= state %><br>' + '<% if (typeof narrative !== "undefined") { %> <p><%= narrative %></p> <% } %>' + '<img src=""/>' + '<p id="activities-heading">Activities:</p>' + icons), html = popup(feature.properties);
         layer.bindPopup(html);
     }
     function createOfficeLayer(offices, officeType, icon) {
@@ -10112,7 +10125,7 @@
         });
     }
     function initModal() {
-        var $modals = $(".modal"), $triggerAbout = $(".trigger-about"), $triggerHelp = $(".trigger-help"), $about = $(".about"), $help = $(".help");
+        var $modals = $(".modal"), $triggerAbout = $(".trigger-about"), $triggerHelp = $(".trigger-help"), $about = $(".about"), $help = $(".help"), $close = $(".close-button");
         $modals.easyModal();
         // Check if local storage says to not open the help on load
         if (localStorage.getItem("hide-help") != "true") {
@@ -10126,6 +10139,10 @@
                 localStorage.setItem("hide-help", "false");
             }
             $help.trigger("closeModal");
+        });
+        $close.on("click", function() {
+            $help.trigger("closeModal");
+            $about.trigger("closeModal");
         });
         $triggerHelp.click(function() {
             $help.trigger("openModal");

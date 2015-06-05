@@ -5,12 +5,12 @@
     layers,
     icons = {
       refuge: L.icon({
-        iconUrl: '/img/map/blue-goose75.png',
+        iconUrl: '../../img/map/blue-goose75.png',
         iconSize: [75, 40],
         popupAnchor: [7, -17]
       }),
       hatchery: L.icon({
-        iconUrl: '/img/map/fish75.png',
+        iconUrl: '../../img/map/fish75.png',
         iconSize: [75, 66],
         popupAnchor: [7, -27]
       })
@@ -18,7 +18,7 @@
 
   L.Icon.Default.imagePath = '../img/map';
 
-  $.getJSON('/js/offices.js', function(geojson) {
+  $.getJSON('../../js/offices.js', function(geojson) {
     layers = addLayers(map, geojson);
     initAutocomplete(map, geojson);
     registerLegendEvents(layers);
@@ -68,7 +68,7 @@
       subdomains: '1234'
     }).addTo(map);
 
-    L.control.layers(null, toggles,{collapsed: false, position: 'topleft'}).addTo(map);
+    L.control.layers(null, toggles,{collapsed: false, position: 'bottomright'}).addTo(map);
     setZoom(offices, cluster);
     map.addLayer(cluster);
     initModal();
@@ -81,14 +81,45 @@
     };
   }
 
+  function getIcons(feature) {
+    var props = feature.properties;
+    var icons = [
+      ['office', 'Visitor Center'],
+      ['binoculars', 'Wildlife Observation'],
+      ['camera', 'Wildlife Photography'],
+      ['trails', 'Hiking Trails'],
+      ['biking', 'Biking'],
+      ['picnic-shelter', 'Picnic Shelter'],
+      ['hunting', 'Hunting'],
+      ['fishing', 'Fishing'],
+      ['canoeing', 'Small water craft'],
+      ['boat-launch', 'Boat lanch'],
+      ['lighthouse', 'Lighthouse']
+    ];
+    var svg = "<div class='office-icons'>";
+
+    if (props.activities) {
+      _.each(icons, function(activity) {
+        if (_.contains(props.activities, activity[0]))
+          svg += "<svg class='icon'><g><title>" + activity[1] + "</title><use xlink:href='#icon-" + activity[0] + "'/></g></svg>";
+        else
+          svg += "<svg class='icon-disabled'><g><title>" + activity[1] + "</title><use xlink:href='#icon-" + activity[0] + "'/></g></svg>";
+      });
+    }
+    svg += "</div>";
+    return svg;
+  }
+
   function onEachOffice(feature, layer) {
+    var icons = getIcons(feature);
     var popup = _.template(
           '<h2><a href="<%= url %>"><%= name %></a></h2>' +
+          '<p id="popup-office-location"><%= city %>, <%= state %><br>' + 
+          '<% if (typeof narrative !== "undefined") { %> <p><%= narrative %></p> <% } %>' +
           '<img src=""/>' +
-          '<p><%= city %>, <%= state %><br>' +
-          '<a href="">Directions</a></p>'
+          '<p id="activities-heading">Activities:</p>' + icons
         ),
-        html = popup(feature.properties);
+    html = popup(feature.properties);
     layer.bindPopup(html);
   }
 
@@ -148,7 +179,8 @@
         $triggerAbout = $('.trigger-about'),
         $triggerHelp = $('.trigger-help'),
         $about = $('.about'),
-        $help = $('.help');
+        $help = $('.help'),
+        $close = $('.close-button');
 
     $modals.easyModal();
 
@@ -166,7 +198,11 @@
       }
       $help.trigger('closeModal');
     });
-    
+
+    $close.on('click', function() {
+      $help.trigger('closeModal');
+      $about.trigger('closeModal');
+    });    
     $triggerHelp.click(function() {
       $help.trigger('openModal');
       $about.trigger('closeModal');

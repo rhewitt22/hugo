@@ -36,10 +36,6 @@
 
   .tag {
     @include tag;
-
-    &:hover {
-      background-color: $color-fws-green;
-    }
   }
 }
 

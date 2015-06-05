@@ -1,0 +1,7 @@
+<li>
+  <h3>{{ .Title }}</h3>
+  <span>{{ .Date.Format "January _2, 2006"}}</span>
+  <p>{{ .Summary }}</p>
+  <div class="news-tags">{{ range .Params.tags }} <a href="/tags/{{ urlize . }}"><span class="tag"><small>{{ title . }}</small></span></a>{{ end }}</div>
+  {{ if .Truncated }}<a class="read-more" href="{{ .Permalink }}">More Details</a>{{ end }}
+</li>

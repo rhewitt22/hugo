@@ -222,7 +222,9 @@
         "city": "Lakeland",
         "state": "GA",
         "zip": "31635",
-        "url": "http://www.fws.gov/refuge/Banks_Lake/"
+        "url": "http://www.fws.gov/refuge/Banks_Lake/",
+        "narrative": "Banks Lake consists of a shallow blackwater lake studded with moss-draped cypress trees and rimmed by marshes and uplands. The 4,049 acre site supports a variety of plants, fish and animals, and features a variety of habitat types, including cypress swamp, freshwater marsh, uplands, and open water.",
+        "activities": ["binoculars", "camera", "trail", "fishing", "boat-ramp", "canoe"]
       },
       "geometry": {
         "type": "Point",
@@ -407,7 +409,9 @@
         "city": "Townsend",
         "state": "GA",
         "zip": "31331",
-        "url": "http://www.fws.gov/blackbeardisland/"
+        "url": "http://www.fws.gov/blackbeardisland/",
+        "narrative": "Blackbeard Island was named for Edward Teach, aka Blackbeard the Pirate. The refuge is only accessible by a privately chartered boat. It provides habitat to a variety of wintering birds, deer, alligators and well as sea turtles. There are approximately 1,163 acres of open freshwater or freshwater marsh, 2,000 acres of regularly flooded salt marsh, 2,115 acres of maritime forest, and 340 acres of sandy beach.",
+        "activities": ["binoculars", "camera", "trail", "biking", "hunting"]
       },
       "geometry": {
         "type": "Point",
@@ -491,7 +495,9 @@
         "city": "Round Oak",
         "state": "GA",
         "zip": "31038",
-        "url": "http://www.fws.gov/bondswamp/"
+        "url": "http://www.fws.gov/bondswamp/",
+        "narrative": "Bond Swamp was established to protect, maintain, and enhance the ecosystem of the Ocmulgee River floodplain. It is home to one of three black bear populations in the state of Georgia, as well as bobcats, deer, fish, reptiles, amphibians and over 200 species of birds. Habitat types range from mixed hardwood/pine ridges to bottomland hardwoods and swamp forests mixed with creeks, beaver swamps and oxbow lakes.",
+        "activities": ["binoculars", "camera", "trail", "hunting", "fishing"]
       },
       "geometry": {
         "type": "Point",
@@ -555,15 +561,7 @@
         "zip": "00622",
         "url": "http://www.fws.gov/caribbean/refuges/Caborojo/default.htm",
         "facebook": "https://www.facebook.com/CaboRojoNWR",
-        "narrative":"Nestled within the gently rolling hills of Puerto Rico’s subtropical dry forest, Cabo Rojo National Wildlife Refuge and the Salt Flats Unit serve as a vital stopover for birds that migrate between North and South America. These birds use the refuge during the cooler months, while resident species are present year-round. The refuge’s Salt Flats are designated as an “Important Regional Site” by the Western Hemisphere Shorebird Reserve Network and an “Important Bird Area” by BirdLife International. In addition, for hundreds of years the Salt Flats have been the main salt production area in Puerto Rico and plays an important part in contributing to the local economy. The Salt Flats has its own visitor center. There are also three walking trails and a five mile biking trail.",
-        "activities": [
-          "visitor center",
-          "wildlife observation",
-          "wildlife photography",
-          "hiking",
-          "biking",
-          "birding"
-        ]
+        "narrative":"Nestled within the gently rolling hills of Puerto Rico’s subtropical dry forest, Cabo Rojo National Wildlife Refuge and the Salt Flats Unit serve as a vital stopover for birds that migrate between North and South America. These birds use the refuge during the cooler months, while resident species are present year-round. The refuge’s Salt Flats are designated as an “Important Regional Site” by the Western Hemisphere Shorebird Reserve Network and an “Important Bird Area” by BirdLife International. In addition, for hundreds of years the Salt Flats have been the main salt production area in Puerto Rico and plays an important part in contributing to the local economy. The Salt Flats has its own visitor center. There are also three walking trails and a five mile biking trail."
       },
       "geometry": {
         "type": "Point",
@@ -889,7 +887,9 @@
         "state": "GA",
         "zip": "30572",
         "url": "http://www.fws.gov/chattahoocheeforest/",
-        "facebook": "https://www.facebook.com/ChattahoocheeForestNationalFishHatchery"
+        "facebook": "https://www.facebook.com/ChattahoocheeForestNationalFishHatchery",
+        "narrative": "The primary responsibility of Chattahoochee Forest National Fish Hatchery is to raise rainbow trout, and station facilities are currently used to produce one million trout each year. These fish are stocked into tailwaters, streams and lakes of Northern Georgia The hatchery also produces brown and brook trout, and also holds populations of threatened and endangered fish.",
+        "activities": ["office", "fishing"]
       },
       "geometry": {
         "type": "Point",
@@ -1462,7 +1462,9 @@
         "state": "GA",
         "zip": "30606",
         "url": "http://www.fws.gov/athens",
-        "facebook": "https://www.facebook.com/GeorgiaFieldOffice"
+        "facebook": "https://www.facebook.com/GeorgiaFieldOffice",
+        "narrative": "Serving the entire state of Georgia, our biologists work with partners to provide scientific expertise on a variety of projects. They also administer permits under the Endangered Species Act.",
+        "activities": ["office"]
       },
       "geometry": {
         "type": "Point",
@@ -1648,7 +1650,9 @@
         "state": "GA",
         "zip": "31331",
         "url": "http://www.fws.gov/refuge/harris_neck/",
-        "facebook": "https://www.facebook.com/HarrisNeckNWR"
+        "facebook": "https://www.facebook.com/HarrisNeckNWR",
+        "narrative": "Harris Neck serves as an important link in the chain of refuges along the eastern seaboard, and is the inland base for two neighboring barrier island refuges, Blackbeard Island and Wolf Island. Since its designation as a wildlife refuge in 1962, Harris Neck has served as a premier nesting, foraging, and wintering habitat for many species of wildlife.  Signature species include wood storks, which nest in a large colony on Woody Pond, and the colorful and uncommon painted bunting, which favors nesting habitat in the refuge's maritime scrub areas.",
+        "activities": ["binoculars", "camera", "trail", "biking", "hunting", "fishing"]
       },
       "geometry": {
         "type": "Point",
@@ -2596,7 +2600,9 @@
         "state": "GA",
         "zip": "31537",
         "url": "http://www.fws.gov/refuge/okefenokee/",
-        "facebook": "https://www.facebook.com/okefenokeewildliferefuge"
+        "facebook": "https://www.facebook.com/okefenokeewildliferefuge",
+        "narrative": "Okefenokee National Wildlife Refuge conserves the unique qualities of the Okefenokee Swamp, one of the world’s largest intact freshwater ecosystems. Habitats provide for threatened and endangered species, such as red-cockaded woodpecker, wood storks, indigo snakes, and a wide variety of other wildlife species.  It is world renowned for its amphibian populations that are bio-indicators of global health.  More than 600 plant species have been identified on refuge lands.",
+        "activities": ["binoculars", "camera", "hunting", "fishing", "canoeing", "office"]
       },
       "geometry": {
         "type": "Point",
@@ -2843,7 +2849,9 @@
         "city": "Round Oak",
         "state": "GA",
         "zip": "31038",
-        "url": "http://www.fws.gov/piedmont/"
+        "url": "http://www.fws.gov/piedmont/",
+        "narrative": "The refuge was established in 1939 as a combination wildlife and game-management demonstration area to demonstrate that wildlife could be restored on worn out, eroded lands. Today, through the efforts of the U.S. Fish & Wildlife Service, the 35,000 acre wildlife refuge once again hosts loblolly pines on the ridges with hardwoods found along creek bottoms and in scattered upland coves. Clear streams and beaver ponds provide ideal wetlands for migrating waterfowl. Wildlife populations have been restored, and Piedmont National Wildlife Refuge now serves as a model forest ecosystem for the management of wildlife.",
+        "activities": ["office", "binoculars", "camera", "trails", "hunting", "fishing", "boat-launch"]
       },
       "geometry": {
         "type": "Point",
@@ -3234,7 +3242,9 @@
         "city": "Hardeeville",
         "state": "SC",
         "zip": "29927",
-        "url": "http://www.fws.gov/refuge/savannah/"
+        "url": "http://www.fws.gov/refuge/savannah/",
+        "narrative": "Savannah National Wildlife Refuge, established April 6, 1927, consists of 29,175 acres of freshwater marshes, tidal rivers and creeks, and bottomland hardwoods. Waterfowl are most abundant from November through February, while alligators and other reptiles are frequently seen from March through October. Birdwatching opportunities are good all year, but are best from October through April when temperatures are mild and many species of waterfowl and other wintering birds are present. Access to many areas is by boat only.",
+        "activities": ["office", "binoculars", "camera", "trails", "biking", "hunting", "fishing", "canoeing"]
       },
       "geometry": {
         "type": "Point",
@@ -4187,7 +4197,9 @@
         "city": "Hardeeville",
         "state": "GA",
         "zip": "29927",
-        "url": "http://www.fws.gov/tybee/"
+        "url": "http://www.fws.gov/tybee/",
+        "narrative": "Established on May 9, 1938, by an executive order of President Franklin D. Roosevelt, the refuge is an important resting and feeding area for migratory birds including gulls, terns, neotropical migratory songbirds, and shorebirds. During all seasons, the refuge's shoreline and open spoil deposits are used as resting sites for brown pelicans, gulls, and terns. Endangered species, including piping plovers and wood storks, have been observed on the refuge land, while shortnose sturgeon and manatees have been found in the waters bordering Tybee. The refuge is unstaffed and is administered from the Savannah Coastal Refuges complex headquarters office in Savannah, Georgia. The entire refuge is considered a sanctuary for migratory birds and is closed to all public use.",
+        "activities": []
       },
       "geometry": {
         "type": "Point",
@@ -4305,74 +4317,16 @@
     {
       "type": "Feature",
       "properties": {
-        "name": "Warm Springs Fish Health Center",
-        "type": "Fish Health Center",
-        "program": "Fisheries And Aquatic Conservation",
-        "address": "5151 Spring Street",
-        "city": "Warm Springs",
-        "state": "GA",
-        "zip": "31830",
-        "url": "Warm Springs Fish Health Center"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -84.673309,
-          32.883136999139296
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Warm Springs Fish Technology Center",
-        "type": "Fish Technology Center",
-        "program": "Fisheries And Aquatic Conservation",
-        "address": "5151 Spring Street",
-        "city": "Warm Springs",
-        "state": "GA",
-        "zip": "31830",
-        "url": "http://www.fws.gov/warmsprings/FishTechno/"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -84.673309,
-          32.883136999139296
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Warm Springs National Fish Hatchery",
+        "name": "Warm Springs National Fish Hatchery, Health, and Tech Center",
         "type": "National Fish Hatchery",
         "program": "Fisheries And Aquatic Conservation",
         "address": "5308 Spring Street",
         "city": "Warm Springs",
         "state": "GA",
         "zip": "31830",
-        "url": "http://www.fws.gov/warmsprings/FishHatchery/"
-      },
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
-          -84.674393,
-          32.88551799913926
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "name": "Warm Springs Regional Fisheries Center",
-        "type": "National Fish Hatchery",
-        "program": "Fisheries And Aquatic Conservation",
-        "address": "5308 Spring Street",
-        "city": "Warm Springs",
-        "state": "GA",
-        "zip": "31830",
-        "url": "http://www.fws.gov/warmsprings/"
+        "url": "http://www.fws.gov/warmsprings/FishHatchery/",
+        "narrative": "Warm Springs is an all-in-one fish center, providing warmwater hatchery services for species such as striped bass, sturgeon, and paddlefish, as well as scientific innovations in fish health and technology. The health center provides state-of-the-art fish disease diagnostic and fish health certification services to a variety of national fish hatcheries, state fish hatcheries, and private fish farms.",
+        "activities": ["office", "fishing"]
       },
       "geometry": {
         "type": "Point",
@@ -4393,7 +4347,9 @@
         "city": "Hardeeville",
         "state": "GA",
         "zip": "29927",
-        "url": "http://www.fws.gov/wassaw/"
+        "url": "http://www.fws.gov/wassaw/",
+        "narrative": "Only accessible by boat, this 10,053-acre refuge includes beaches with rolling dunes, maritime forest, and vast salt marshes. The island supports rookeries for egrets and herons, and a variety of wading birds are abundant in the summer months. In summer, telltale tracks on Wassaw's beach attest to nocturnal visits by the threatened loggerhead sea turtles which come ashore for egg laying and then return secretively to the sea. Birdwatching is particularly fruitful during the spring and fall migrations.",
+        "activities": ["binoculars", "camera", "trails", "hunting", "fishing", "boat-launch"]
       },
       "geometry": {
         "type": "Point",
@@ -4636,7 +4592,9 @@
         "city": "Townsend",
         "state": "GA",
         "zip": "31331",
-        "url": "http://www.fws.gov/wolfisland/"
+        "url": "http://www.fws.gov/wolfisland/",
+        "narrative": "Wolf Island was established on April 3, 1930 as a migratory bird sanctuary. Over 75% of the refuge's 5,126 acres are composed of saltwater marshes. It is located in McIntosh County, Georgia, 12 miles east of Darien (by boat). Wolf Island is designated as a National Wilderness Area, therefore no public use facilities exist or are planned on the refuge.",
+        "activities": []
       },
       "geometry": {
         "type": "Point",

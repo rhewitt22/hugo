@@ -159,7 +159,7 @@ module.exports = function(grunt) {
         tasks: ['shell:hugo:dev']
       },
       js: {
-        files: ['<%= jshint.files %>', '!js/offices.js'],
+        files: ['<%= jshint.files %>'],
         tasks: ['newer:jshint', 'newer:uglify:dev', 'shell:hugo:dev']
       },
       json: {

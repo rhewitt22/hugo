@@ -21,8 +21,8 @@
       data: parameters
     }).success( function (data) {
       $loading.remove();
-      if (data.TotalJobs === 0) {
-        $jobs.html('Sorry, no results found.  Check back soon!');
+      if (data.TotalJobs === "0") {
+        $jobs.html('<p>Sorry, no results found.  Check back soon!</p>');
       } else {
         $jobs.html( template(data) );
       }

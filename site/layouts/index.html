@@ -30,15 +30,24 @@
           {{ range first 3 (where .Site.Pages "Section" "news") }}
             {{ .Render "li" }}
           {{ end }}
-          <p><a href="{{ .Site.Params.baseurl }}/news" class="newsroom-button">Go to the newsroom...</a></p>
+        <p><a href="/news" class="newsroom-button">Go to the Newsroom</a></p>
         </ul>
+
+        <h2>Upcoming Events</h2>
+        <hr>
+        <ul class="event-list">
+          {{ range first 3 (where .Site.Pages "Section" "events") }}
+            {{ .Render "li" }}
+          {{ end }}
+        </ul>
+        <p><a href="/events" class="button">View all Events</a></p>
 
         <!-- <h2>Events</h2>
         {% include events.html %} -->
 
         <h2>Our Regional Priorities</h2>
-
         <hr>
+
         <ul class="regional-priorities">
           <li>
             <h3>Species At-Risk</h3>

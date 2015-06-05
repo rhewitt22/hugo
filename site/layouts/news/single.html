@@ -6,19 +6,20 @@
     {{ partial "hero.html" . }}
     {{ partial "search-form.html" . }}
     <div class="wrapper">
-      <section id="main-content">
+      <section id="main-content" class="full-story">
         <h1>{{ .Title }}</h1>
         {{ with .Params.subtitle }}<h2><em>{{ . }}</em></h2>{{ end }}
         {{ .Content }}
+
+        <div class="news-tags">{{ range .Params.tags }}<a href="/tags/{{ urlize . }}"><span class="tag"><small>{{ title . }}</small></span></a>{{ end }}</div>
         
-        <br>
+        <br><br>
         <hr>
 
         <p>The mission of the U.S. Fish and Wildlife Service is working with others to conserve, protect, and enhance fish, wildlife, plants, and their habitats for the continuing benefit of the American people. We are both a leader and trusted partner in fish and wildlife conservation, known for our scientific excellence, stewardship of lands and natural resources, dedicated professionals, and commitment to public service.</p>
 
         <p>For more information on our work and the people who make it happen, visit <a href="http://www.fws.gov">www.fws.gov</a>. Connect with our <a href="https://facebook.com/{{ .Site.Params.facebook }}">Facebook page</a>, follow our <a href="https://twitter.com/{{ .Site.Params.facebook }}">tweets</a>, watch our <a href="https://youtube.com/playlist?list=PL5225C01A38A652EA">YouTube Channel</a> and download photos from our <a href="https://flickr.com/{{ .Site.Params.flickr }}">Flickr page</a>.</p>
       </section>
-      {{ partial "sidebar.html" . }}
     </div>
     {{ partial "footer.html" . }}
     {{ partial "scripts.html" . }}

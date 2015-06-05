@@ -8,7 +8,7 @@
       $search = $('input[type=search]');
 
   // Get offices data, compile template
-  $.getJSON('/js/offices.js', function(data) {
+  $.getJSON('../js/offices.js', function(data) {
     offices = data.features;
     $officeList.append( template(offices) );
   });

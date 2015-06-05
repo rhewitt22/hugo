@@ -1,0 +1,38 @@
+figure {
+    background-color: #eee;
+    padding: 5px;
+    font-size: .875em;
+    display: table;
+    border: 1px solid #bbb;
+    border-bottom: none;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    margin: 2em auto 0 auto;
+}
+
+figure a {
+  text-decoration: none;
+}
+
+figure img {
+    display: block;
+    width: 100%;
+}
+
+figcaption {
+    display: table-caption;
+    caption-side: bottom;
+    background: #eee;
+    padding: 5px 5px;
+    border: 1px solid #bbb;
+    border-top: none;
+    color: #336699;
+    text-align: center;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin: 0 auto 2em auto;
+
+    p {
+        margin-top: 0;
+    }
+}

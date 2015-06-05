@@ -29,10 +29,29 @@ body {
 }
 
 .modal {
+  position: relative;
   background: #fff;
-  border-radius: 5px;
   padding: 25px;
   display: none;
+  width: 100%;
+
+  @media (min-width: 800px) {
+    border-radius: 5px;
+    max-width: 500px;
+  }
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: $color-fws-green;
+  font-size: 2em;
+  font-family: $font-sans;
+
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 form {
@@ -66,7 +85,37 @@ form {
 
 .leaflet-popup-content {
   h2 {
-    font-size: 1em;
+    font-size: 1.4em;
     margin-top: 0;
+    line-height: 22px;
+  }
+
+  p {
+    line-height: 18px;
   }
 }
+
+.office-icons {
+  text-align: center;
+}
+
+.icon {
+  height: 23px;
+  width: 23px;
+  transition: all 0.5s ease;
+  margin-right: 3px;
+}
+
+.icon-disabled {
+  @extend .icon;
+  fill: #bbb;
+}
+
+#activities-heading {
+  margin-bottom: 5px;
+}
+
+#popup-office-location {
+  margin: 0;
+}
+

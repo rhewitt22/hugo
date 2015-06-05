@@ -1,0 +1,15 @@
+.breadcrumbs {
+  @include no-style-list;
+
+  li {
+    display: inline-block;
+
+    &:last-child:after {
+      content: "";
+    }
+
+    &:after {
+      content: " » ";
+    }
+  }
+}
