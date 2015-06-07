@@ -1,0 +1,12 @@
+.did-you-know {
+  margin: $leading;
+
+  figure {
+    margin: auto;
+
+    @media (min-width: 800px) {
+      float:right;
+      margin: 0 0 $leading $leading;
+    }
+  }
+}

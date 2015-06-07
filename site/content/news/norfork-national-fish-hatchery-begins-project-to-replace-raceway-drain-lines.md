@@ -2,7 +2,7 @@
 title: Norfork National Fish Hatchery Begins Project to Replace Raceway Drain Lines
 date: 2015-03-04
 
-thumbnail: img/thumbnail/norfork-nfh.jpg
+thumbnail: /img/thumbnail/norfork-nfh.jpg
 
 categories:
  - press release

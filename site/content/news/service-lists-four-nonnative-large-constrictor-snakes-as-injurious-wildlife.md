@@ -4,7 +4,7 @@ subtitle: Protections for Native Wildlife and Sensitive U.S. Ecosystems Strength
 
 date: 2015-03-06
 
-thumbnail: img/thumbnail/reticulated-python.jpg
+thumbnail: /img/thumbnail/reticulated-python.jpg
 credit: Bjorn Lardner, Colorado State University
 
 categories:

@@ -2,7 +2,7 @@
 title: "Service Proposes to Designate Critical Habitat and Announces Re-opening of Comment Period on Proposed Listing of Black Pinesnake"
 date: "2015-03-10"
 
-thumbnail: img/thumbnail/black-pinesnake.jpg
+thumbnail: /img/thumbnail/black-pinesnake.jpg
 credit: Jim Lee, TNC
 
 categories:

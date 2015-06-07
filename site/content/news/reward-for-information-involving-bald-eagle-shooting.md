@@ -2,7 +2,7 @@
 title: Reward for Information Involving Bald Eagle Shooting
 date: 2015-01-27
 
-thumbnail: img/thumbnail/recovering-bald-eagle.jpg
+thumbnail: /img/thumbnail/recovering-bald-eagle.jpg
 credit: University of Tennessee Veterinary Hospital
 
 categories:

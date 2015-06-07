@@ -2,7 +2,7 @@
 title: $7,500 Reward for Information on Bald Eagle Shooting
 date: 2015-03-31
 
-thumbnail: img/thumbnail/injured-bald-eagle.jpg
+thumbnail: /img/thumbnail/injured-bald-eagle.jpg
 credit: Adam Caughern
 
 categories:

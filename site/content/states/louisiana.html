@@ -1,0 +1,59 @@
+---
+title: Louisiana
+hero: alligator
+
+state: louisiana
+
+tags:
+ - louisiana
+
+js:
+ - /js/state.js
+---
+
+<div class="did-you-know">
+  <div>
+    <figure>
+      <img src="/img/black-bear-avery-island.jpg" alt="A close up photograph of a black bear's face.">
+      <figcaption>
+        Louisiana black bear at Avery Island
+      </figcaption>
+    </figure>
+    <p>We recently proposed to delist the Louisiana black bear due to successful recovery, and are currently accepting public comments. <a href="/wildlife/mammal/louisiana-black-bear">Learn more.</a></p>
+  </div>
+
+  <div>
+    <figure>
+      <img src="/img/pallid-sturgeon.jpg" alt="A 2 year old pallid sturgeon in hand.">
+      <figcaption>
+        Pallid Sturgeon at Neosho National Fish Hatchery. Photo: Katie Steiger-Meister, USFWS
+      </figcaption>
+    </figure>
+    <p>There are 27 federally protected plants and animals found in Louisiana, like the pallid sturgeon. Learn more.</p>
+  </div>
+
+  <div>
+    <figure>
+      <img src="/img/brown-pelican-nesting.jpg" alt="Several brown pelicans photographed at a nesting site.">
+      <figcaption>
+        Nesting Brown Pelicans on Breton Island NWR. Photo: USFWS
+      </figcaption>
+    </figure>
+    <p>Trend data indicates that Louisiana is losing a football field’s worth of vital wetland habitat every hour to sea level rise. What does that mean for wildlife? Learn more.</p>
+  </div>
+</div>
+
+<script id="jobs-template" type="x-handlebars-template">
+  {{#each JobData}}
+  <li class="job-card">
+    <img src="/img/pushpin.png" />
+    <h3><a href="{{ ApplyOnlineURL }}">{{ JobTitle }} ({{ Series }})</a></h3>
+    <p>Job Listing: {{ StartDate }} - {{ EndDate }}</p>
+    <p>Pay Grade: {{ PayPlan }} {{ Grade }} <span class="salary">Salary Range: {{ SalaryMin }} - {{ SalaryMax }}</span></p>
+    <p class="job-summary">{{ JobSummary }}</p>
+    <p>{{ Locations }}</p>
+    <p>{{ WorkType }} {{ WorkSchedule }}</p>
+    <p>Who map apply: {{ WhoMayApplyText }}</p>
+  </li>
+  {{/each}}
+</script>

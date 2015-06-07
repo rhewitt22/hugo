@@ -24,6 +24,7 @@ module.exports = function(grunt) {
           'site/static/js/changing-world.js': ['js/changing-world.js'],
           'site/static/js/species-profile.js': ['js/vendor/handlebars.3.0.2.min.js', 'js/vendor/scrollNav.min.js','js/vendor/moment.min.js','js/species-profile.js'],
           'site/static/js/staff.js': ['js/vendor/handlebars.3.0.2.min.js', 'js/staff.js'],
+          'site/static/js/state.js': ['js/vendor/underscore.1.8.3.js', 'js/vendor/handlebars.3.0.2.min.js', 'js/vendor/slick.1.5.0.min.js', 'js/state.js'],
           'site/static/js/map.js': [
             'js/vendor/leaflet.js', 
             'js/vendor/leaflet.markercluster.min.js', 
@@ -57,7 +58,7 @@ module.exports = function(grunt) {
       hugo: {
         command: function(target) {
           if (target === 'dev') {
-            return 'hugo --baseUrl=http://127.0.0.1 --buildDrafts=true --buildFuture=true --source=site --destination=../build/dev';
+            return 'hugo --baseUrl=http://127.0.0.1:9999/ --buildDrafts=true --buildFuture=true --source=site --destination=../build/dev';
           } else {
             return 'hugo --source=site --destination=../build/dist';
           }
@@ -69,7 +70,7 @@ module.exports = function(grunt) {
       dev: {
         options: {
           hostname: '127.0.0.1',
-          port: '80',
+          port: '9999',
           protocol: 'http',
           base: 'build/dev',
           livereload: true

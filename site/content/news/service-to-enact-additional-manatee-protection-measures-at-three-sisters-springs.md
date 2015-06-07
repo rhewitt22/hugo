@@ -1,7 +1,7 @@
 ---
 title: Service to Enact Additional Manatee Protection Measures at Three Sisters Springs
 date: 2015-02-26
-thumbnail: img/thumbnail/manatee.jpg
+thumbnail: /img/thumbnail/manatee.jpg
 
 categories:
  - press release

@@ -2,7 +2,7 @@
 title: Palm Beach County Man Sentenced for Unlawfully Transporting Endangered Sea Turtles
 date: 2015-02-26
 
-thumbnail: img/thumbnail/le-sea-turtle-eggs.jpg
+thumbnail: /img/thumbnail/le-sea-turtle-eggs.jpg
 credit: FWC Law Enforcement
 
 categories:

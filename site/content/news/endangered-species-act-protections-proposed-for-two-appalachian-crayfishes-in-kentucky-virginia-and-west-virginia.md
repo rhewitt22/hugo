@@ -2,7 +2,7 @@
 title: Endangered Species Act Protections Proposed for Two Appalachian Crayfishes in Kentucky, Virginia and West Virginia
 date: 2015-04-06
 
-thumbnail: img/thumbnail/big-sandy-crayfish.jpg
+thumbnail: /img/thumbnail/big-sandy-crayfish.jpg
 credit: Zachary Loughman, West Liberty University
 
 categories:

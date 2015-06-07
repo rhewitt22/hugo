@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head.html" . }}
+  <body>
+    {{ partial "header.html" . }}
+    {{ partial "hero.html" . }}
+    {{ partial "search-form.html" . }}
+    <div class="wrapper">
+      <section id="main-content">
+        {{ partial "breadcrumbs.html" . }}
+        <h1 class="state-name">{{ .Title }}</h1>
+        <h2>Did You Know?</h2>
+        {{ .Content }}
+        <h2>News</h2>
+        <hr class="news-hr">
+        <ul class="news-teasers">
+          {{ $state := index .Site.Taxonomies.tags .Params.state }}
+          {{ range where $state.Pages "Section" "news" }}
+            {{ .Render "li" }}
+          {{ end }}
+        <p><a href="/news" class="newsroom-button">Go to the Newsroom</a></p>
+        </ul>
+
+        <h2>Upcoming Events</h2>
+        <hr>
+        {{ range where $state.Pages.ByDate "Section" "events" }}
+          {{ .Render "summary" }}
+        {{ end }}
+        <h2>Endangered Species</h2>
+        <p>This content still needs development.</p>
+        <h2>National Wildlife Refuges</h2>
+        <h2>Jobs</h2>
+      </section>
+    </div>
+    {{ partial "footer.html" . }}
+    {{ partial "scripts.html" . }}
+  </body>
+</html>

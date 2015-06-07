@@ -3,7 +3,7 @@ title: Service Protects Northern Long-eared Bat as Threatened Under Endangered S
 subtitle: Also Issues Interim Special Rule that Tailors Protections to Eliminate Unnecessary Restrictions and Provide Regulatory Flexibility for Landowners
 date: 2015-04-01
 
-thumbnail: img/thumbnail/northern-long-eared-bat.jpg
+thumbnail: /img/thumbnail/northern-long-eared-bat.jpg
 credit: Pete Pattavina, USFWS
 
 categories:

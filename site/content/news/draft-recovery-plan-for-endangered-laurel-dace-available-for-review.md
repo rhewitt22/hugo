@@ -2,7 +2,7 @@
 title: Draft Recovery Plan for Endangered Laurel dace Available for Review
 date: "2015-01-14"
 
-thumbnail: img/thumbnail/laurel-dace.jpg
+thumbnail: /img/thumbnail/laurel-dace.jpg
 credit: Conservation Fisheries International
 
 categories:

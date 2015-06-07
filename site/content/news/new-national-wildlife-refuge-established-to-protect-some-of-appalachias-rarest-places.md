@@ -10,7 +10,7 @@ categories:
 tags:
   - national wildlife refuge
 
-thumbnail: img/trout-lilly.jpg
+thumbnail: /img/trout-lilly.jpg
 credit: Gary Peeples, USFWS
 ---
 

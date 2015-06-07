@@ -3,7 +3,7 @@ title: Service and Florida Wildlife Commission Investigates Migratory Bird Treat
 date: 2015-04-01
 subtitle: Violation will be handled by Federal court in West Palm Beach
 
-thumbnail: img/thumbnail/great-horned-owl.jpg
+thumbnail: /img/thumbnail/great-horned-owl.jpg
 credit: Garry Tucker, USFWS
 
 categories:

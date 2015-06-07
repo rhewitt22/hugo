@@ -3,7 +3,7 @@ title: Secretary Jewell, Governor Jindal Announce Proposal to Remove Louisiana B
 subtitle: Successful partnership among states, federal agencies, landowners and universities has recovered iconic species that inspired the ‘Teddy Bear’
 date: "2015-05-20"
 
-thumbnail: img/thumbnail/louisiana-black-bear.jpg
+thumbnail: /img/thumbnail/louisiana-black-bear.jpg
 
 categories:
  - press release

@@ -4,7 +4,7 @@ date: 2015-03-04
 
 hero: theel
 
-thumbnail: img/thumbnail/kirtlands-warbler.jpg
+thumbnail: /img/thumbnail/kirtlands-warbler.jpg
 
 categories:
  - press release

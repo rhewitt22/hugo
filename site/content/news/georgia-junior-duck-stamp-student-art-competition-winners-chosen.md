@@ -2,7 +2,7 @@
 title: 2015 Georgia Junior Duck Stamp Student Art Competition Winners Chosen
 date: 2015-04-09
 
-thumbnail: img/thumbnail/ga-junior-duck-stamp-best-in-show-2015.jpg
+thumbnail: /img/thumbnail/ga-junior-duck-stamp-best-in-show-2015.jpg
 credit: Amber Dong
 
 categories:
